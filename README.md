@@ -84,8 +84,7 @@ is rendered to:
 
 and seems like:
 
-<img src="./Assets/Example-iPhone5.png" alt="Example-iPhone5" style="zoom:40%;" />
-
+<img src="./Assets/Example-iPhone5.png" alt="Example-iPhone5" width="270px" />
 
 
 ## Thanks for inspiration and ideas
