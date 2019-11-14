@@ -1,22 +1,54 @@
 # Makeup 💋
 
-Easy to use swift-based web dsl for rendering HTML. Not the first, but the best (will become, one day... 😌)
+SwiftDSL for rendering HTML. Not the first, but the best (will become, one day... 😌)
 
 ## Still in Beta
 
-_Not recommended to for production use yet. (And you will not be able to do anything, because there is no renderer yet)_
+_[Not recommended to for production use yet.]_
 
 __Calendar:__
 
-- Rendering: November 2019
+- Basics (Nodes, Attributes, some CSS) ✅
 
-- First release: December 2019
-- Contribution guide: Janruary 2020
-- Attributes extended support: January 2020
-- CSS extended support: February 2020
-- Testing: April 2020
+- Assets (WebColor, WebSize, Webfonts) ✅
 
-_Contact [me](https://twitter.com/maximkrouk) if You want to contribute._
+- Preparations for semantic filtering ✅
+
+- Function Builders ✅
+
+- Html building functions ✅
+
+- String literal support ✅
+
+- Rendering ✅
+
+- NodeWrapper attibutes modification via dot-notation _(like in the __Usage__ example)_
+
+  -  November 2019
+
+- First release
+
+  - December 2019
+
+- Contribution guide
+
+  - December 2019 – Janruary 2020
+
+- Attributes extended support _(via static factories)_
+
+  ​	January 2020
+
+- CSS extended support
+
+  - January 2020 – February 2020
+
+- Testing
+
+  - up to May 2020
+
+---
+
+_Contact [me](https://twitter.com/maximkrouk) if You want to contribute before the guide is provided._
 
 ----
 
@@ -87,6 +119,7 @@ and seems like:
 <img src="./Assets/Example-iPhone5.png" alt="Example-iPhone5" width="270px" />
 
 
+
 ## Thanks for inspiration and ideas
 
 __[Pointfree.co](https://github.com/pointfreeco)__, __[David Okun](https://github.com/dokun1/)__ & __[WWDC2019](https://developer.apple.com/videos/play/wwdc2019/402/)__
@@ -104,4 +137,6 @@ __[Pointfree.co](https://github.com/pointfreeco)__, __[David Okun](https://githu
 ----
 
 _You may contact me [here](https://twitter.com/maximkrouk) if You have any questions_
+
+---
 
