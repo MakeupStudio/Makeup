@@ -53,19 +53,12 @@ public func address(_ attributes: HTML.AttributeSet<HTML.Tag.Address> = [],
     .init(.element(HTML.Tag.Address.self, attributes.erased, content.makeup(HTML.Tag.self).node))
 }
 
-public func area(_ attributes: HTML.Attribute<HTML.Tag.Area>...,
-                 @HTML.Tag.Area.Builder content wrapper: () -> HtmlAreaTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Area> {
-    area(HTML.AttributeSet(attributes), content: wrapper)
+public func area(_ attributes: HTML.Attribute<HTML.Tag.Area>...) -> HTML.NodeWrapper<HTML.Tag.Area> {
+    area(HTML.AttributeSet(attributes))
 }
 
-public func area(_ attributes: HTML.AttributeSet<HTML.Tag.Area>,
-                 @HTML.Tag.Area.Builder content wrapper: () -> HtmlAreaTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Area> {
-    .init(.element(HTML.Tag.Area.self, attributes.erased, wrapper().content().node))
-}
-
-public func area(_ attributes: HTML.AttributeSet<HTML.Tag.Area> = [],
-                 _ content: Makeupable) -> HTML.NodeWrapper<HTML.Tag.Area> {
-    .init(.element(HTML.Tag.Area.self, attributes.erased, content.makeup(HTML.Tag.self).node))
+public func area(_ attributes: HTML.AttributeSet<HTML.Tag.Area>) -> HTML.NodeWrapper<HTML.Tag.Area> {
+    .init(.void(HTML.Tag.Area.self, attributes.erased))
 }
 
 public func article(_ attributes: HTML.Attribute<HTML.Tag.Article>...,
@@ -130,19 +123,12 @@ public func b(_ attributes: HTML.AttributeSet<HTML.Tag.B> = [],
     .init(.element(HTML.Tag.B.self, attributes.erased, content.makeup(HTML.Tag.self).node))
 }
 
-public func base(_ attributes: HTML.Attribute<HTML.Tag.Base>...,
-                 @HTML.Tag.Base.Builder content wrapper: () -> HtmlBaseTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Base> {
-    base(HTML.AttributeSet(attributes), content: wrapper)
+public func base(_ attributes: HTML.Attribute<HTML.Tag.Base>...) -> HTML.NodeWrapper<HTML.Tag.Base> {
+    base(HTML.AttributeSet(attributes))
 }
 
-public func base(_ attributes: HTML.AttributeSet<HTML.Tag.Base>,
-                 @HTML.Tag.Base.Builder content wrapper: () -> HtmlBaseTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Base> {
-    .init(.element(HTML.Tag.Base.self, attributes.erased, wrapper().content().node))
-}
-
-public func base(_ attributes: HTML.AttributeSet<HTML.Tag.Base> = [],
-                 _ content: Makeupable) -> HTML.NodeWrapper<HTML.Tag.Base> {
-    .init(.element(HTML.Tag.Base.self, attributes.erased, content.makeup(HTML.Tag.self).node))
+public func base(_ attributes: HTML.AttributeSet<HTML.Tag.Base>) -> HTML.NodeWrapper<HTML.Tag.Base> {
+    .init(.void(HTML.Tag.Base.self, attributes.erased))
 }
 
 public func bdi(_ attributes: HTML.Attribute<HTML.Tag.Bdi>...,
@@ -205,19 +191,12 @@ public func body(_ attributes: HTML.AttributeSet<HTML.Tag.Body> = [],
     .init(.element(HTML.Tag.Body.self, attributes.erased, content.makeup(HTML.Tag.self).node))
 }
 
-public func br(_ attributes: HTML.Attribute<HTML.Tag.Br>...,
-               @HTML.Tag.Br.Builder content wrapper: () -> HtmlBrTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Br> {
-    br(HTML.AttributeSet(attributes), content: wrapper)
+public func br(_ attributes: HTML.Attribute<HTML.Tag.Br>...) -> HTML.NodeWrapper<HTML.Tag.Br> {
+    br(HTML.AttributeSet(attributes))
 }
 
-public func br(_ attributes: HTML.AttributeSet<HTML.Tag.Br>,
-               @HTML.Tag.Br.Builder content wrapper: () -> HtmlBrTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Br> {
-    .init(.element(HTML.Tag.Br.self, attributes.erased, wrapper().content().node))
-}
-
-public func br(_ attributes: HTML.AttributeSet<HTML.Tag.Br> = [],
-               _ content: Makeupable) -> HTML.NodeWrapper<HTML.Tag.Br> {
-    .init(.element(HTML.Tag.Br.self, attributes.erased, content.makeup(HTML.Tag.self).node))
+public func br(_ attributes: HTML.AttributeSet<HTML.Tag.Br>) -> HTML.NodeWrapper<HTML.Tag.Br> {
+    .init(.void(HTML.Tag.Br.self, attributes.erased))
 }
 
 public func button(_ attributes: HTML.Attribute<HTML.Tag.Button>...,
@@ -297,19 +276,12 @@ public func code(_ attributes: HTML.AttributeSet<HTML.Tag.Code> = [],
     .init(.element(HTML.Tag.Code.self, attributes.erased, content.makeup(HTML.Tag.self).node))
 }
 
-public func col(_ attributes: HTML.Attribute<HTML.Tag.Col>...,
-                @HTML.Tag.Col.Builder content wrapper: () -> HtmlColTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Col> {
-    col(HTML.AttributeSet(attributes), content: wrapper)
+public func col(_ attributes: HTML.Attribute<HTML.Tag.Col>...) -> HTML.NodeWrapper<HTML.Tag.Col> {
+    col(HTML.AttributeSet(attributes))
 }
 
-public func col(_ attributes: HTML.AttributeSet<HTML.Tag.Col>,
-                @HTML.Tag.Col.Builder content wrapper: () -> HtmlColTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Col> {
-    .init(.element(HTML.Tag.Col.self, attributes.erased, wrapper().content().node))
-}
-
-public func col(_ attributes: HTML.AttributeSet<HTML.Tag.Col> = [],
-                _ content: Makeupable) -> HTML.NodeWrapper<HTML.Tag.Col> {
-    .init(.element(HTML.Tag.Col.self, attributes.erased, content.makeup(HTML.Tag.self).node))
+public func col(_ attributes: HTML.AttributeSet<HTML.Tag.Col>) -> HTML.NodeWrapper<HTML.Tag.Col> {
+    .init(.void(HTML.Tag.Col.self, attributes.erased))
 }
 
 public func colgroup(_ attributes: HTML.Attribute<HTML.Tag.Colgroup>...,
@@ -496,19 +468,12 @@ public func em(_ attributes: HTML.AttributeSet<HTML.Tag.Em> = [],
     .init(.element(HTML.Tag.Em.self, attributes.erased, content.makeup(HTML.Tag.self).node))
 }
 
-public func embed(_ attributes: HTML.Attribute<HTML.Tag.Embed>...,
-                  @HTML.Tag.Embed.Builder content wrapper: () -> HtmlEmbedTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Embed> {
-    embed(HTML.AttributeSet(attributes), content: wrapper)
+public func embed(_ attributes: HTML.Attribute<HTML.Tag.Embed>...) -> HTML.NodeWrapper<HTML.Tag.Embed> {
+    embed(HTML.AttributeSet(attributes))
 }
 
-public func embed(_ attributes: HTML.AttributeSet<HTML.Tag.Embed>,
-                  @HTML.Tag.Embed.Builder content wrapper: () -> HtmlEmbedTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Embed> {
-    .init(.element(HTML.Tag.Embed.self, attributes.erased, wrapper().content().node))
-}
-
-public func embed(_ attributes: HTML.AttributeSet<HTML.Tag.Embed> = [],
-                  _ content: Makeupable) -> HTML.NodeWrapper<HTML.Tag.Embed> {
-    .init(.element(HTML.Tag.Embed.self, attributes.erased, content.makeup(HTML.Tag.self).node))
+public func embed(_ attributes: HTML.AttributeSet<HTML.Tag.Embed>) -> HTML.NodeWrapper<HTML.Tag.Embed> {
+    .init(.void(HTML.Tag.Embed.self, attributes.erased))
 }
 
 // MARK: –––––––––––––––– F ––––––––––––––––
@@ -710,19 +675,12 @@ public func header(_ attributes: HTML.AttributeSet<HTML.Tag.Header> = [],
     .init(.element(HTML.Tag.Header.self, attributes.erased, content.makeup(HTML.Tag.self).node))
 }
 
-public func hr(_ attributes: HTML.Attribute<HTML.Tag.Hr>...,
-               @HTML.Tag.Hr.Builder content wrapper: () -> HtmlHrTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Hr> {
-    hr(HTML.AttributeSet(attributes), content: wrapper)
+public func hr(_ attributes: HTML.Attribute<HTML.Tag.Hr>...) -> HTML.NodeWrapper<HTML.Tag.Hr> {
+    hr(HTML.AttributeSet(attributes))
 }
 
-public func hr(_ attributes: HTML.AttributeSet<HTML.Tag.Hr>,
-               @HTML.Tag.Hr.Builder content wrapper: () -> HtmlHrTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Hr> {
-    .init(.element(HTML.Tag.Hr.self, attributes.erased, wrapper().content().node))
-}
-
-public func hr(_ attributes: HTML.AttributeSet<HTML.Tag.Hr> = [],
-               _ content: Makeupable) -> HTML.NodeWrapper<HTML.Tag.Hr> {
-    .init(.element(HTML.Tag.Hr.self, attributes.erased, content.makeup(HTML.Tag.self).node))
+public func hr(_ attributes: HTML.AttributeSet<HTML.Tag.Hr>) -> HTML.NodeWrapper<HTML.Tag.Hr> {
+    .init(.void(HTML.Tag.Hr.self, attributes.erased))
 }
 
 public func html(_ attributes: HTML.Attribute<HTML.Tag.Html>...,
@@ -772,34 +730,20 @@ public func iframe(_ attributes: HTML.AttributeSet<HTML.Tag.Iframe> = [],
     .init(.element(HTML.Tag.Iframe.self, attributes.erased, content.makeup(HTML.Tag.self).node))
 }
 
-public func img(_ attributes: HTML.Attribute<HTML.Tag.Img>...,
-                @HTML.Tag.Img.Builder content wrapper: () -> HtmlImgTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Img> {
-    img(HTML.AttributeSet(attributes), content: wrapper)
+public func img(_ attributes: HTML.Attribute<HTML.Tag.Img>...) -> HTML.NodeWrapper<HTML.Tag.Img> {
+    img(HTML.AttributeSet(attributes))
 }
 
-public func img(_ attributes: HTML.AttributeSet<HTML.Tag.Img>,
-                @HTML.Tag.Img.Builder content wrapper: () -> HtmlImgTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Img> {
-    .init(.element(HTML.Tag.Img.self, attributes.erased, wrapper().content().node))
+public func img(_ attributes: HTML.AttributeSet<HTML.Tag.Img>) -> HTML.NodeWrapper<HTML.Tag.Img> {
+    .init(.void(HTML.Tag.Img.self, attributes.erased))
 }
 
-public func img(_ attributes: HTML.AttributeSet<HTML.Tag.Img> = [],
-                _ content: Makeupable) -> HTML.NodeWrapper<HTML.Tag.Img> {
-    .init(.element(HTML.Tag.Img.self, attributes.erased, content.makeup(HTML.Tag.self).node))
+public func input(_ attributes: HTML.Attribute<HTML.Tag.Input>...) -> HTML.NodeWrapper<HTML.Tag.Input> {
+    input(HTML.AttributeSet(attributes))
 }
 
-public func input(_ attributes: HTML.Attribute<HTML.Tag.Input>...,
-                  @HTML.Tag.Input.Builder content wrapper: () -> HtmlInputTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Input> {
-    input(HTML.AttributeSet(attributes), content: wrapper)
-}
-
-public func input(_ attributes: HTML.AttributeSet<HTML.Tag.Input>,
-                  @HTML.Tag.Input.Builder content wrapper: () -> HtmlInputTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Input> {
-    .init(.element(HTML.Tag.Input.self, attributes.erased, wrapper().content().node))
-}
-
-public func input(_ attributes: HTML.AttributeSet<HTML.Tag.Input> = [],
-                  _ content: Makeupable) -> HTML.NodeWrapper<HTML.Tag.Input> {
-    .init(.element(HTML.Tag.Input.self, attributes.erased, content.makeup(HTML.Tag.self).node))
+public func input(_ attributes: HTML.AttributeSet<HTML.Tag.Input>) -> HTML.NodeWrapper<HTML.Tag.Input> {
+    .init(.void(HTML.Tag.Img.self, attributes.erased))
 }
 
 public func ins(_ attributes: HTML.Attribute<HTML.Tag.Ins>...,
@@ -866,19 +810,12 @@ public func legend(_ attributes: HTML.AttributeSet<HTML.Tag.Legend> = [],
     .init(.element(HTML.Tag.Legend.self, attributes.erased, content.makeup(HTML.Tag.self).node))
 }
 
-public func link(_ attributes: HTML.Attribute<HTML.Tag.Link>...,
-                 @HTML.Tag.Link.Builder content wrapper: () -> HtmlLinkTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Link> {
-    link(HTML.AttributeSet(attributes), content: wrapper)
+public func link(_ attributes: HTML.Attribute<HTML.Tag.Link>...) -> HTML.NodeWrapper<HTML.Tag.Link> {
+    link(HTML.AttributeSet(attributes))
 }
 
-public func link(_ attributes: HTML.AttributeSet<HTML.Tag.Link>,
-                 @HTML.Tag.Link.Builder content wrapper: () -> HtmlLinkTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Link> {
-    .init(.element(HTML.Tag.Link.self, attributes.erased, wrapper().content().node))
-}
-
-public func link(_ attributes: HTML.AttributeSet<HTML.Tag.Link> = [],
-                 _ content: Makeupable) -> HTML.NodeWrapper<HTML.Tag.Link> {
-    .init(.element(HTML.Tag.Link.self, attributes.erased, content.makeup(HTML.Tag.self).node))
+public func link(_ attributes: HTML.AttributeSet<HTML.Tag.Link>) -> HTML.NodeWrapper<HTML.Tag.Link> {
+    .init(.void(HTML.Tag.Img.self, attributes.erased))
 }
 
 // MARK: –––––––––––––––– M ––––––––––––––––
@@ -928,19 +865,12 @@ public func mark(_ attributes: HTML.AttributeSet<HTML.Tag.Mark> = [],
     .init(.element(HTML.Tag.Mark.self, attributes.erased, content.makeup(HTML.Tag.self).node))
 }
 
-public func meta(_ attributes: HTML.Attribute<HTML.Tag.Meta>...,
-                 @HTML.Tag.Meta.Builder content wrapper: () -> HtmlMetaTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Meta> {
-    meta(HTML.AttributeSet(attributes), content: wrapper)
+public func meta(_ attributes: HTML.Attribute<HTML.Tag.Meta>...) -> HTML.NodeWrapper<HTML.Tag.Meta> {
+    meta(HTML.AttributeSet(attributes))
 }
 
-public func meta(_ attributes: HTML.AttributeSet<HTML.Tag.Meta>,
-                 @HTML.Tag.Meta.Builder content wrapper: () -> HtmlMetaTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Meta> {
-    .init(.element(HTML.Tag.Meta.self, attributes.erased, wrapper().content().node))
-}
-
-public func meta(_ attributes: HTML.AttributeSet<HTML.Tag.Meta> = [],
-                 _ content: Makeupable) -> HTML.NodeWrapper<HTML.Tag.Meta> {
-    .init(.element(HTML.Tag.Meta.self, attributes.erased, content.makeup(HTML.Tag.self).node))
+public func meta(_ attributes: HTML.AttributeSet<HTML.Tag.Meta>) -> HTML.NodeWrapper<HTML.Tag.Meta> {
+    .init(.void(HTML.Tag.Meta.self, attributes.erased))
 }
 
 public func meter(_ attributes: HTML.Attribute<HTML.Tag.Meter>...,
@@ -1084,19 +1014,12 @@ public func p(_ attributes: HTML.AttributeSet<HTML.Tag.P> = [],
     .init(.element(HTML.Tag.P.self, attributes.erased, content.makeup(HTML.Tag.self).node))
 }
 
-public func param(_ attributes: HTML.Attribute<HTML.Tag.Param>...,
-                  @HTML.Tag.Param.Builder content wrapper: () -> HtmlParamTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Param> {
-    param(HTML.AttributeSet(attributes), content: wrapper)
+public func param(_ attributes: HTML.Attribute<HTML.Tag.Param>...) -> HTML.NodeWrapper<HTML.Tag.Param> {
+    param(HTML.AttributeSet(attributes))
 }
 
-public func param(_ attributes: HTML.AttributeSet<HTML.Tag.Param>,
-                  @HTML.Tag.Param.Builder content wrapper: () -> HtmlParamTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Param> {
-    .init(.element(HTML.Tag.Param.self, attributes.erased, wrapper().content().node))
-}
-
-public func param(_ attributes: HTML.AttributeSet<HTML.Tag.Param> = [],
-                  _ content: Makeupable) -> HTML.NodeWrapper<HTML.Tag.Param> {
-    .init(.element(HTML.Tag.Param.self, attributes.erased, content.makeup(HTML.Tag.self).node))
+public func param(_ attributes: HTML.AttributeSet<HTML.Tag.Param>) -> HTML.NodeWrapper<HTML.Tag.Param> {
+    .init(.void(HTML.Tag.Param.self, attributes.erased))
 }
 
 public func picture(_ attributes: HTML.Attribute<HTML.Tag.Picture>...,
@@ -1315,19 +1238,12 @@ public func small(_ attributes: HTML.AttributeSet<HTML.Tag.Small> = [],
     .init(.element(HTML.Tag.Small.self, attributes.erased, content.makeup(HTML.Tag.self).node))
 }
 
-public func source(_ attributes: HTML.Attribute<HTML.Tag.Source>...,
-                   @HTML.Tag.Source.Builder content wrapper: () -> HtmlSourceTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Source> {
-    source(HTML.AttributeSet(attributes), content: wrapper)
+public func source(_ attributes: HTML.Attribute<HTML.Tag.Source>...) -> HTML.NodeWrapper<HTML.Tag.Source> {
+    source(HTML.AttributeSet(attributes))
 }
 
-public func source(_ attributes: HTML.AttributeSet<HTML.Tag.Source>,
-                   @HTML.Tag.Source.Builder content wrapper: () -> HtmlSourceTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Source> {
-    .init(.element(HTML.Tag.Source.self, attributes.erased, wrapper().content().node))
-}
-
-public func source(_ attributes: HTML.AttributeSet<HTML.Tag.Source> = [],
-                   _ content: Makeupable) -> HTML.NodeWrapper<HTML.Tag.Source> {
-    .init(.element(HTML.Tag.Source.self, attributes.erased, content.makeup(HTML.Tag.self).node))
+public func source(_ attributes: HTML.AttributeSet<HTML.Tag.Source>) -> HTML.NodeWrapper<HTML.Tag.Source> {
+    .init(.void(HTML.Tag.Source.self, attributes.erased))
 }
 
 public func span(_ attributes: HTML.Attribute<HTML.Tag.Span>...,
@@ -1587,19 +1503,12 @@ public func tr(_ attributes: HTML.AttributeSet<HTML.Tag.Tr> = [],
     .init(.element(HTML.Tag.Tr.self, attributes.erased, content.makeup(HTML.Tag.self).node))
 }
 
-public func track(_ attributes: HTML.Attribute<HTML.Tag.Track>...,
-                  @HTML.Tag.Track.Builder content wrapper: () -> HtmlTrackTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Track> {
-    track(HTML.AttributeSet(attributes), content: wrapper)
+public func track(_ attributes: HTML.Attribute<HTML.Tag.Track>...) -> HTML.NodeWrapper<HTML.Tag.Track> {
+    track(HTML.AttributeSet(attributes))
 }
 
-public func track(_ attributes: HTML.AttributeSet<HTML.Tag.Track>,
-                  @HTML.Tag.Track.Builder content wrapper: () -> HtmlTrackTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Track> {
-    .init(.element(HTML.Tag.Track.self, attributes.erased, wrapper().content().node))
-}
-
-public func track(_ attributes: HTML.AttributeSet<HTML.Tag.Track> = [],
-                  _ content: Makeupable) -> HTML.NodeWrapper<HTML.Tag.Track> {
-    .init(.element(HTML.Tag.Track.self, attributes.erased, content.makeup(HTML.Tag.self).node))
+public func track(_ attributes: HTML.AttributeSet<HTML.Tag.Track>) -> HTML.NodeWrapper<HTML.Tag.Track> {
+    .init(.void(HTML.Tag.Track.self, attributes.erased))
 }
 
 // MARK: –––––––––––––––– U ––––––––––––––––
@@ -1668,17 +1577,10 @@ public func video(_ attributes: HTML.AttributeSet<HTML.Tag.Video> = [],
 
 // MARK: –––––––––––––––– W ––––––––––––––––
 
-public func wbr(_ attributes: HTML.Attribute<HTML.Tag.Wbr>...,
-                @HTML.Tag.Wbr.Builder content wrapper: () -> HtmlWbrTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Wbr> {
-    wbr(HTML.AttributeSet(attributes), content: wrapper)
+public func wbr(_ attributes: HTML.Attribute<HTML.Tag.Wbr>...) -> HTML.NodeWrapper<HTML.Tag.Wbr> {
+    wbr(HTML.AttributeSet(attributes))
 }
 
-public func wbr(_ attributes: HTML.AttributeSet<HTML.Tag.Wbr>,
-                @HTML.Tag.Wbr.Builder content wrapper: () -> HtmlWbrTagContentWrapper) -> HTML.NodeWrapper<HTML.Tag.Wbr> {
-    .init(.element(HTML.Tag.Wbr.self, attributes.erased, wrapper().content().node))
-}
-
-public func wbr(_ attributes: HTML.AttributeSet<HTML.Tag.Wbr> = [],
-                _ content: Makeupable) -> HTML.NodeWrapper<HTML.Tag.Wbr> {
-    .init(.element(HTML.Tag.Wbr.self, attributes.erased, content.makeup(HTML.Tag.self).node))
+public func wbr(_ attributes: HTML.AttributeSet<HTML.Tag.Wbr>) -> HTML.NodeWrapper<HTML.Tag.Wbr> {
+    .init(.void(HTML.Tag.Track.self, attributes.erased))
 }

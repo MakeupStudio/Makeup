@@ -9,8 +9,6 @@
 extension HTML {
     
     public struct NodeWrapper<Element>: HtmlNodeWrapper, MakeupableProvider, ErasableType, ExpressibleByStringLiteral {
-        
-        
         public let node: HTML.Node
         
         public init(_ node: Node = .text("")) {
@@ -22,7 +20,6 @@ extension HTML {
         }
         
         public var erased: HTML.ErasedNodeWrapper { .init(node) }
-        
     }
     
 }

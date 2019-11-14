@@ -7,7 +7,7 @@
 //
 
 // MARK: Global attributes
-extension HTML.Attribute where Element: StaticTagProtocol {
+extension HTML.Attribute where Element: HtmlTag {
     
     static func tabindex(_ value: String) -> Self {
         return .custom("tabindex", value)

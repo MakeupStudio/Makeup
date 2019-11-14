@@ -8,7 +8,7 @@
 
 extension HTML {
     
-    public enum Attribute<Element: StaticTagProtocol>: HashableHtmlAttribute, ErasableType {
+    public enum Attribute<Element: HtmlTag>: HashableHtmlAttribute, ErasableType {
         
         case custom(String, String)
         case data(String, String)

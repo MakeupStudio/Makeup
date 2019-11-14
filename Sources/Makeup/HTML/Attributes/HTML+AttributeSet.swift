@@ -17,7 +17,7 @@ extension HTML.AttributeSet {
 
 extension HTML {
     
-    public struct AttributeSet<T: StaticTagProtocol>: Collection, ExpressibleByArrayLiteral, ErasableType {
+    public struct AttributeSet<T: HtmlTag>: Collection, ExpressibleByArrayLiteral, ErasableType {
         
         private var storage: Storage
         
