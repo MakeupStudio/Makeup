@@ -2,7 +2,8 @@
 //  HTML+Renderer.swift
 //  Makeup
 //
-//  Created by Maxim Krouk on 11/14/19.
+//  Created by Maxim Krouk on 9/1/19.
+//  Copyright © 2019 Maxim Krouk. All rights reserved.
 //
 
 // MARK: - Render
@@ -21,14 +22,21 @@ extension HTML.Renderer {
 extension HTML {
     
     // MARK: - Declaration
-    public class Renderer: StringRenderer {
-        
-        public var root: Node
-        public var renderingMode: RenderingMode
+    public struct Renderer: StringRenderer {
+        public let root: Node
+        public let renderingMode: RenderingMode
         
         public init(renderingMode: RenderingMode = .compact, _ root: Node) {
             self.renderingMode = renderingMode
             self.root = root
+        }
+        
+        public func withRenderingMode(_ renderingMode: RenderingMode) -> Self {
+            .init(renderingMode: renderingMode, root)
+        }
+        
+        public func withRoot(_ node: Node) -> Self {
+            .init(renderingMode: renderingMode, node)
         }
         
     }

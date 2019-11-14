@@ -8,7 +8,7 @@
 
 extension HTML {
     
-    public struct NodeWrapper<Element>: HtmlNodeWrapper, MakeupableProvider, ErasableType, ExpressibleByStringLiteral {
+    public struct NodeWrapper<Element>: HtmlNodeWrapper, ExpressibleByStringLiteral, ErasableType {
         public let node: HTML.Node
         
         public init(_ node: Node = .text("")) {
@@ -24,8 +24,8 @@ extension HTML {
     
 }
 
-extension HTML.NodeWrapper: Makeupable where Element: MakeupableProvider {
+extension HTML.NodeWrapper: Makeupable {
     
-    public func makeup<T>() -> HTML.NodeWrapper<T> { .init(node) }
+    public func makeup() -> AnyHtmlTagContentWrapper { HTML.NodeWrapper<HTML.Tag>(node) }
     
 }
