@@ -8,23 +8,31 @@ _[Not recommended to for production use yet.]_
 
 __Calendar:__
 
-- Basics (Nodes, Attributes, some CSS) ✅
+- ✅ Basics (Nodes, Attributes, some CSS)
 
-- Assets (WebColor, WebSize, Webfonts) ✅
+- ✅ Assets (WebColor, WebSize, Webfonts)
 
-- Preparations for semantic filtering ✅
+- ✅ Preparations for semantic filtering
 
-- Function Builders ✅
+- ✅ Function Builders
 
-- Html building functions ✅
+- ✅ Html building functions
 
-- String literal support ✅
+- ✅ String literal support
 
-- Rendering ✅
+- ✅ Rendering
 
-- NodeWrapper attibutes modification via dot-notation _(like in the __Usage__ example)_
+- ✅ NodeWrapper attibutes modification via dot-notation _(like in the __Usage__ example)_
 
   -  November 2019
+  
+- Xcode documentation in sources
+
+  -  November 2019 – December 2019
+
+- Git-flow
+
+  - December 2019
 
 - First release
 
@@ -41,6 +49,10 @@ __Calendar:__
 - CSS extended support
 
   - January 2020 – February 2020
+
+- External docs
+
+  - uo to May 2020
 
 - Testing
 
