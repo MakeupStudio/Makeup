@@ -6,8 +6,6 @@
 //  Copyright © 2019 Maxim Krouk. All rights reserved.
 //
 
-import Foundation
-
 extension HTML.Tag.Base: MetadataHtmlTag {}
 extension HTML.Tag.Link: MetadataHtmlTag {}
 extension HTML.Tag.Meta: MetadataHtmlTag {}

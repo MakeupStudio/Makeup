@@ -6,8 +6,6 @@
 //  Copyright © 2019 Maxim Krouk. All rights reserved.
 //
 
-import Foundation
-
 extension HTML.Node {
     
     var asRaw: Raw? { Raw(self) }

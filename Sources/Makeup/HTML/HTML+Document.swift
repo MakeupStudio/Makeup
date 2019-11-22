@@ -12,8 +12,8 @@ extension HTML {
         public let doctype: String = "<!DOCTYPE html>"
         public let root: Node
         
-        init(content: NodeWrapper<HTML.Tag.Html>) {
-            self.root = content.node
+        init(content wrapper: HtmlDocumentContentWrapper) {
+            self.root = wrapper.content().node
         }
         
         public func print() { Swift.print(string) }

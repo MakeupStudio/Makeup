@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 public extension Optional {
     
     /// Sets object to nil.

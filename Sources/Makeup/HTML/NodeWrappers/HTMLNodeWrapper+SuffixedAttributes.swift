@@ -6,8 +6,6 @@
 //  Copyright © 2019 Maxim Krouk. All rights reserved.
 //
 
-import Foundation
-
 // MARK: - Private
 extension HTML.NodeWrapper where Element: HtmlTag {
     

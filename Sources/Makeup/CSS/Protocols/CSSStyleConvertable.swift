@@ -6,7 +6,7 @@
 //  Copyright © 2019 Maxim Krouk. All rights reserved.
 //
 
-protocol CSSStyleConvertable {
+public protocol CSSStyleConvertable {
     
     var cssStyle: CSS.Style { get }
     

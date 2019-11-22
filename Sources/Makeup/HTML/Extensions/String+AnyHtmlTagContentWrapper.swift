@@ -6,8 +6,6 @@
 //  Copyright © 2019 Maxim Krouk. All rights reserved.
 //
 
-import Foundation
-
 extension String: AnyHtmlTagContentWrapper {
     
     public func content() -> HTML.NodeWrapper<ContentOfHtmlATag>          { .init(.text(self)) }

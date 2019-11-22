@@ -6,8 +6,6 @@
 //  Copyright © 2019 Maxim Krouk. All rights reserved.
 //
 
-import Foundation
-
 typealias Result<Success> = Swift.Result<Success, Error>
 
 extension Result {

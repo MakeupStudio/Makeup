@@ -6,6 +6,10 @@
 //  Copyright © 2019 Maxim Krouk. All rights reserved.
 //
 
+public protocol HtmlDocumentContentWrapper {
+    func content() -> HTML.NodeWrapper<ContentOfHtmlDocument>
+}
+
 public protocol HtmlATagContentWrapper {
     func content() -> HTML.NodeWrapper<ContentOfHtmlATag>
 }

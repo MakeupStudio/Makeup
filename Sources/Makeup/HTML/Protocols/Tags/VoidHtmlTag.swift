@@ -6,6 +6,4 @@
 //  Copyright © 2019 Maxim Krouk. All rights reserved.
 //
 
-import Foundation
-
 public protocol VoidHtmlTag: HtmlTag {}
