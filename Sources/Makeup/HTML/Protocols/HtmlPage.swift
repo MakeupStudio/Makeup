@@ -7,6 +7,6 @@
 
 public protocol HtmlPage {
     
-    var content: ContentOfHtmlDocument { get }
+    var content: HtmlDocumentContentWrapper { get }
 
 }

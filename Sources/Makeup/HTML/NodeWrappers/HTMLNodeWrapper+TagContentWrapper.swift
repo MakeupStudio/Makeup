@@ -6,6 +6,10 @@
 //  Copyright © 2019 Maxim Krouk. All rights reserved.
 //
 
+extension HTML.NodeWrapper: HtmlDocumentContentWrapper where Element: ContentOfHtmlDocument {
+    public func content() -> HTML.NodeWrapper<ContentOfHtmlDocument> { .init(node) }
+}
+
 // MARK: - –––––––––––––––– A ––––––––––––––––
 
 extension HTML.NodeWrapper: HtmlATagContentWrapper where Element: ContentOfHtmlATag {
