@@ -46,5 +46,26 @@ public extension HTML.ErasedAttributeSet {
     subscript(index: Index) -> Element { storage[index].value }
 
     func index(after i: Index) -> Index { storage.index(after: i) }
+    
+    subscript(key: Storage.Key) -> Element? {
+        get { storage[key] }
+        set { storage[key] = newValue }
+    }
+    
+    func updated(with attribute: Element) -> Self {
+        var result = storage
+        switch attribute {
+        case let .custom(key,_):
+            result[key] = attribute
+        case let .style(new):
+            var styles = CSS.StylesCollection()
+            if case let .style(old) = result["style"] {
+               styles += old
+            }
+            styles += new
+            result["style"] = .style(styles)
+        }
+        return .init(result)
+    }
 
 }

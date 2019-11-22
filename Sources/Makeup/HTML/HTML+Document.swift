@@ -18,7 +18,7 @@ extension HTML {
         
         public func print() { Swift.print(string) }
         
-        public var string: String { render(using: HTML.Renderer(root)) }
+        public var string: String { render(using: HTML.Renderer(renderingMode: .pretty, root)) }
         
         public func render<Renderer: StringRenderer>(using renderer: Renderer) -> String {
             doctype + "\n" +

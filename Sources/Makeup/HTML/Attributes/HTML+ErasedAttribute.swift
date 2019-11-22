@@ -8,17 +8,32 @@
 
 extension HTML {
     
-    public struct ErasedAttribute: HtmlAttribute {
-        public var key: String
-        public var value: String
-        
-        public init(key: String, value: String) {
-            self.key = key
-            self.value = value
+    public enum ErasedAttribute: HashableHtmlAttribute {
+        case custom(String, String)
+        case style(CSS.StylesCollection)
+    
+        public var key: String {
+            switch self {
+            case .custom(let key, _): return key
+            case .style: return "style"
+            }
         }
         
-        public func transform<T>(to: T.Type) -> T where T: HtmlAttribute {
-            return .init(key: key, value: value)
+        public var value: String {
+            switch self {
+            case .custom(_, let value):
+                return value
+            case .style(let collection):
+                return collection.cssString
+            }
+        }
+        
+        public static func ==(lhs: Self, rhs: Self) -> Bool {
+            lhs.hashValue == rhs.hashValue
+        }
+        
+        public init(key: String, value: String) {
+            self = .custom(key, value)
         }
         
     }

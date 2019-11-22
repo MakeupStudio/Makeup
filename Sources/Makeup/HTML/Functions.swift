@@ -96,7 +96,7 @@ public func area(_ attributes: HTML.Attribute<HTML.Tag.Area>...) -> HTML.NodeWra
 }
 
 public func area(_ attributes: HTML.AttributeSet<HTML.Tag.Area>) -> HTML.NodeWrapper<HTML.Tag.Area> {
-    .init(.void(HTML.Tag.Area.self, attributes.erased))
+    .init(.element(HTML.Tag.Area.self, attributes.erased, []))
 }
 
 public func article(_ attributes: HTML.Attribute<HTML.Tag.Article>...,
@@ -182,7 +182,7 @@ public func base(_ attributes: HTML.Attribute<HTML.Tag.Base>...) -> HTML.NodeWra
 }
 
 public func base(_ attributes: HTML.AttributeSet<HTML.Tag.Base>) -> HTML.NodeWrapper<HTML.Tag.Base> {
-    .init(.void(HTML.Tag.Base.self, attributes.erased))
+    .init(.element(HTML.Tag.Base.self, attributes.erased, []))
 }
 
 public func bdi(_ attributes: HTML.Attribute<HTML.Tag.Bdi>...,
@@ -266,7 +266,7 @@ public func br(_ attributes: HTML.Attribute<HTML.Tag.Br>...) -> HTML.NodeWrapper
 }
 
 public func br(_ attributes: HTML.AttributeSet<HTML.Tag.Br>) -> HTML.NodeWrapper<HTML.Tag.Br> {
-    .init(.void(HTML.Tag.Br.self, attributes.erased))
+    .init(.element(HTML.Tag.Br.self, attributes.erased, []))
 }
 
 public func button(_ attributes: HTML.Attribute<HTML.Tag.Button>...,
@@ -371,7 +371,7 @@ public func col(_ attributes: HTML.Attribute<HTML.Tag.Col>...) -> HTML.NodeWrapp
 }
 
 public func col(_ attributes: HTML.AttributeSet<HTML.Tag.Col>) -> HTML.NodeWrapper<HTML.Tag.Col> {
-    .init(.void(HTML.Tag.Col.self, attributes.erased))
+    .init(.element(HTML.Tag.Col.self, attributes.erased, []))
 }
 
 public func colgroup(_ attributes: HTML.Attribute<HTML.Tag.Colgroup>...,
@@ -611,7 +611,7 @@ public func embed(_ attributes: HTML.Attribute<HTML.Tag.Embed>...) -> HTML.NodeW
 }
 
 public func embed(_ attributes: HTML.AttributeSet<HTML.Tag.Embed>) -> HTML.NodeWrapper<HTML.Tag.Embed> {
-    .init(.void(HTML.Tag.Embed.self, attributes.erased))
+    .init(.element(HTML.Tag.Embed.self, attributes.erased, []))
 }
 
 // MARK: –––––––––––––––– F ––––––––––––––––
@@ -870,7 +870,7 @@ public func hr(_ attributes: HTML.Attribute<HTML.Tag.Hr>...) -> HTML.NodeWrapper
 }
 
 public func hr(_ attributes: HTML.AttributeSet<HTML.Tag.Hr>) -> HTML.NodeWrapper<HTML.Tag.Hr> {
-    .init(.void(HTML.Tag.Hr.self, attributes.erased))
+    .init(.element(HTML.Tag.Hr.self, attributes.erased, []))
 }
 
 public func html(_ attributes: HTML.Attribute<HTML.Tag.Html>...,
@@ -937,7 +937,7 @@ public func img(_ attributes: HTML.Attribute<HTML.Tag.Img>...) -> HTML.NodeWrapp
 }
 
 public func img(_ attributes: HTML.AttributeSet<HTML.Tag.Img>) -> HTML.NodeWrapper<HTML.Tag.Img> {
-    .init(.void(HTML.Tag.Img.self, attributes.erased))
+    .init(.element(HTML.Tag.Img.self, attributes.erased, []))
 }
 
 public func input(_ attributes: HTML.Attribute<HTML.Tag.Input>...) -> HTML.NodeWrapper<HTML.Tag.Input> {
@@ -945,7 +945,7 @@ public func input(_ attributes: HTML.Attribute<HTML.Tag.Input>...) -> HTML.NodeW
 }
 
 public func input(_ attributes: HTML.AttributeSet<HTML.Tag.Input>) -> HTML.NodeWrapper<HTML.Tag.Input> {
-    .init(.void(HTML.Tag.Img.self, attributes.erased))
+    .init(.element(HTML.Tag.Img.self, attributes.erased, []))
 }
 
 public func ins(_ attributes: HTML.Attribute<HTML.Tag.Ins>...,
@@ -1033,7 +1033,7 @@ public func link(_ attributes: HTML.Attribute<HTML.Tag.Link>...) -> HTML.NodeWra
 }
 
 public func link(_ attributes: HTML.AttributeSet<HTML.Tag.Link>) -> HTML.NodeWrapper<HTML.Tag.Link> {
-    .init(.void(HTML.Tag.Img.self, attributes.erased))
+    .init(.element(HTML.Tag.Img.self, attributes.erased, []))
 }
 
 // MARK: –––––––––––––––– M ––––––––––––––––
@@ -1100,7 +1100,7 @@ public func meta(_ attributes: HTML.Attribute<HTML.Tag.Meta>...) -> HTML.NodeWra
 }
 
 public func meta(_ attributes: HTML.AttributeSet<HTML.Tag.Meta>) -> HTML.NodeWrapper<HTML.Tag.Meta> {
-    .init(.void(HTML.Tag.Meta.self, attributes.erased))
+    .init(.element(HTML.Tag.Meta.self, attributes.erased, []))
 }
 
 public func meter(_ attributes: HTML.Attribute<HTML.Tag.Meter>...,
@@ -1285,7 +1285,7 @@ public func param(_ attributes: HTML.Attribute<HTML.Tag.Param>...) -> HTML.NodeW
 }
 
 public func param(_ attributes: HTML.AttributeSet<HTML.Tag.Param>) -> HTML.NodeWrapper<HTML.Tag.Param> {
-    .init(.void(HTML.Tag.Param.self, attributes.erased))
+    .init(.element(HTML.Tag.Param.self, attributes.erased, []))
 }
 
 public func picture(_ attributes: HTML.Attribute<HTML.Tag.Picture>...,
@@ -1565,7 +1565,7 @@ public func source(_ attributes: HTML.Attribute<HTML.Tag.Source>...) -> HTML.Nod
 }
 
 public func source(_ attributes: HTML.AttributeSet<HTML.Tag.Source>) -> HTML.NodeWrapper<HTML.Tag.Source> {
-    .init(.void(HTML.Tag.Source.self, attributes.erased))
+    .init(.element(HTML.Tag.Source.self, attributes.erased, []))
 }
 
 public func span(_ attributes: HTML.Attribute<HTML.Tag.Span>...,
@@ -1898,7 +1898,7 @@ public func track(_ attributes: HTML.Attribute<HTML.Tag.Track>...) -> HTML.NodeW
 }
 
 public func track(_ attributes: HTML.AttributeSet<HTML.Tag.Track>) -> HTML.NodeWrapper<HTML.Tag.Track> {
-    .init(.void(HTML.Tag.Track.self, attributes.erased))
+    .init(.element(HTML.Tag.Track.self, attributes.erased, []))
 }
 
 // MARK: –––––––––––––––– U ––––––––––––––––
@@ -1988,5 +1988,5 @@ public func wbr(_ attributes: HTML.Attribute<HTML.Tag.Wbr>...) -> HTML.NodeWrapp
 }
 
 public func wbr(_ attributes: HTML.AttributeSet<HTML.Tag.Wbr>) -> HTML.NodeWrapper<HTML.Tag.Wbr> {
-    .init(.void(HTML.Tag.Track.self, attributes.erased))
+    .init(.element(HTML.Tag.Track.self, attributes.erased, []))
 }

@@ -11,13 +11,11 @@ extension HTML {
     public enum Attribute<Element: HtmlTag>: HashableHtmlAttribute, ErasableType {
         
         case custom(String, String)
-        case data(String, String)
         case style(CSS.StylesCollection)
         
         public var key: String {
             switch self {
             case .custom(let key, _): return key
-            case .data(let key, _): return "data-" + key
             case .style: return "style"
             }
         }
@@ -25,8 +23,6 @@ extension HTML {
         public var value: String {
             switch self {
             case .custom(_, let value):
-                return value
-            case .data(_, let value):
                 return value
             case .style(let collection):
                 return collection.cssString

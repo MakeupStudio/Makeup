@@ -8,22 +8,20 @@
 
 extension HTML {
     
-    public indirect enum Node: ExpressibleByStringLiteral {
+    public indirect enum Node: ExpressibleByStringLiteral, ExpressibleByArrayLiteral {
         case raw(String)
-        case void(VoidHtmlTag.Type, ErasedAttributeSet)
         case text(String)
         case fragment([Node] = [])
         case comment(String)
-        case element(NonVoidHtmlTag.Type, ErasedAttributeSet, Node)
+        case element(HtmlTag.Type, ErasedAttributeSet, Node)
         
         public init(stringLiteral value: String) { self = .text(value) }
+        public init(arrayLiteral elements: Self...) { self = .fragment(elements) }
         
         public var isEmpty: Bool {
             switch self {
-            case .void:
-                return true
-            case .element:
-                return false
+            case .element(let tag,_,_):
+                return tag is NonVoidHtmlTag
             case let .comment(string), let .raw(string), let .text(string):
                 return string.isEmpty
             case let .fragment(children):

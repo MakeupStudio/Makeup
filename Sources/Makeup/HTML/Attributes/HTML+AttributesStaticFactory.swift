@@ -9,6 +9,10 @@
 // MARK: Global attributes
 extension HTML.Attribute where Element: HtmlTag {
     
+    static func data(key: String, _ value: String) -> Self {
+        return .custom("data-\(key)", value)
+    }
+    
     static func tabindex(_ value: String) -> Self {
         return .custom("tabindex", value)
     }
