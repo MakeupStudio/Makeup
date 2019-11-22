@@ -12,6 +12,22 @@ extension CSS {
         public var key: String
         public var value: String
         public var rawValue: String { "\(key):\(value)" }
+        
+        public init(_ key: String, value: String) {
+            self.init(key: key, value: value)
+        }
+        
+        public init?(_ rawValue: String) {
+            let components = rawValue.components(separatedBy: ":")
+            guard components.count == 2 else { return nil }
+            key = components.first!.trimmingCharacters(in: .whitespacesAndNewlines)
+            value = components.last!.trimmingCharacters(in: .whitespacesAndNewlines)
+        }
+        
+        public init(key: String, value: String) {
+            self.key = key
+            self.value = value
+        }
     }
     
 }
