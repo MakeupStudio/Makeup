@@ -1,6 +1,6 @@
 # Makeup 💋
 
-SwiftDSL for rendering HTML. Not the first, but the best (will become, one day... 😌)
+Swift DSL for rendering HTML. Not the first, but the best (will become, one day... 😌)
 
 ## Usage
 
@@ -159,7 +159,7 @@ __[Pointfree.co](https://github.com/pointfreeco)__, __[David Okun](https://githu
 
 ----
 
-_You may contact me [here](https://twitter.com/maximkrouk) if You have any questions_
+_You may contact me [here](https://twitter.com/maximkrouk) if You have any questions._
 
 ---
 
