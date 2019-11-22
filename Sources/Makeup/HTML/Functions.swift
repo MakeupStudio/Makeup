@@ -22,13 +22,11 @@ public func raw(_ content: String) -> AnyHtmlTagContentWrapper {
     HTML.NodeWrapper<HTML.Tag>(.text(content))
 }
 
-public func document(_ renderingMode: HTML.Renderer.RenderingMode = .pretty,
-                     _ content: () -> HTML.NodeWrapper<HTML.Tag.Html>) -> HTML.Document {
-    document(renderingMode, content())
+public func document(_ content: () -> HTML.NodeWrapper<HTML.Tag.Html>) -> HTML.Document {
+    document(content: content())
 }
 
-public func document(_ renderingMode: HTML.Renderer.RenderingMode = .pretty,
-                     _ content: HTML.NodeWrapper<HTML.Tag.Html>) -> HTML.Document {
+public func document(content: HTML.NodeWrapper<HTML.Tag.Html>) -> HTML.Document {
     HTML.Document(content: content)
 }
 
