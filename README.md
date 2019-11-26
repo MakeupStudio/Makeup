@@ -95,37 +95,40 @@ __Calendar:__
 - ✅ String literal support
 - ✅ Rendering
 - ⏱ NodeWrapper attibutes modification via suffixed methods _(dot-notation like in the __Usage__ example)_
-
   -  November 2019
+  
 - 🗳 Xcode documentation in sources
-
   -  November 2019 – December 2019
-- 🗳 Git-flow
-
+  
+- ⏱ Git-flow
   - December 2019
+  
 - ⏱ First release (API v1, static pages & simple sites production ready) _(1.0.0)_
-
   - December 2019
+  
 - 🗳 Contribution guide with explanations of the package architecture
-
   - December 2019 – Janruary 2020
+  
 - 🗳 Attributes extended support _(via static factories)_
   - January 2020
+  
 - 🗳 CSS extended support
-
   - January 2020 – February 2020
+  
 - 🗳 JS support
-  - January 2020 – February 2020
+  - February 2020 – March 2020
+  
 - 🗳 API v2 _(2.0.0)_
-  - February 2020
+  - March 2020
+  
 - 🗳 External docs & Examples
-
-  - uo to May 2020
-- 🗳 Testing
-
   - up to May 2020
-- 🗳 API v3 (stable) _(2.0.0)_
-  - May - June 2020
+  
+- 🗳 Testing
+  - up to May 2020
+  
+- 🗳 API v3 (stable) _(3.0.0)_
+  - May 2020 - June 2020
 
 ---
 
