@@ -19,7 +19,7 @@ final class MakeupTests: XCTestCase {
                 }
                 .background(color: .ultraviolet)
             }
-        }.print()
+        }
     }
 
     static var allTests = [

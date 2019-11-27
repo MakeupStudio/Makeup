@@ -1,10 +1,6 @@
 # Makeup 💋
 
-> _(See `develop/release` brunch for the more relevant codebase.)_
-
-> _(Deadlines are missed, but still working on improvements & CSS DSL)_
-
-<p>
+<p> 
     <a href="https://www.bitrise.io">
         <img src="https://app.bitrise.io/app/61ab971f41ba1c99/status.svg?token=tpPB3UQPxF6A2wSv_EljFQ&branch=develop/release" alt="Bitrise"/>
     </a>
@@ -16,7 +12,7 @@
     </a>
     <img src="https://img.shields.io/badge/Platforms-Mac & Linux-green.svg?style=flat" alt="Mac & Linux" />
     <a href="https://twitter.com/maximkrouk">
-        <img src="https://img.shields.io/badge/twitter-@maximkrouk-blue.svg?logo=twitter&style=social" alt="Twitter: @maximkrouk"/>
+        <img src="https://img.shields.io/badge/twitter-@maximkrouk-blue.svg?logo=twitter&style=social" alt="Twitter: @maximkrouk" />
     </a>
 </p>
 
@@ -162,7 +158,6 @@ __Calendar:__
 
 🗳 - Waiting
 
-## Sites using Makeup
 
 **[mxswift](https://mxswift.herokuapp.com)**
 
@@ -206,9 +201,10 @@ __Calendar:__
     </a>
 </p></div>
 
-----
 
-> _You may contact me [here](https://twitter.com/maximkrouk) if You want to contribute before the guide is provided or if You have any other questions or ideas._
+---
+
+_You may contact me [here](https://twitter.com/maximkrouk) if You want to contribute before the guide is provided or if You have any other questions or ideas._
 
 ---
 
