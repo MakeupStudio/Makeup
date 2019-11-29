@@ -8,7 +8,7 @@
 
 extension Double {
     
-    public func `in`(_ unit: WebSize.Unit) -> WebSize { .init(self, unit) }
+    public var `in`: WebSize.Provider { .init(value: self) }
     
     public static postfix func %(_ lhs: Self) -> WebSize { .init(lhs, .percent) }
     
@@ -16,7 +16,7 @@ extension Double {
 
 extension Int {
     
-    public func `in`(_ unit: WebSize.Unit) -> WebSize { .init(Double(self), unit) }
+    public var `in`: WebSize.Provider { .init(value: Double(self)) }
     
     public static postfix func %(_ lhs: Self) -> WebSize { .init(lhs, .percent) }
     
@@ -24,7 +24,7 @@ extension Int {
 
 extension Float {
     
-    public func `in`(_ unit: WebSize.Unit) -> WebSize { .init(self, unit) }
+    public var `in`: WebSize.Provider { .init(value: Double(self)) }
     
     public static postfix func %(_ lhs: Self) -> WebSize { .init(lhs, .percent) }
     

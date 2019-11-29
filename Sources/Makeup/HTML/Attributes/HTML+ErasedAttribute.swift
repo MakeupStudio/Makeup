@@ -33,6 +33,10 @@ extension HTML {
         }
         
         public init(key: String, value: String) {
+            if Self.style([]).key == key {
+                self = .style(CSS.StylesCollection(value) ?? [])
+                return
+            }
             self = .custom(key, value)
         }
         

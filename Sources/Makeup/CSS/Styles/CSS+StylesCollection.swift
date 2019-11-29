@@ -18,4 +18,10 @@ extension CSS.StylesCollection {
         reduce("") { $0 + $1.rawValue + ";" }
     }
     
+    init?(_ cssString: String) {
+        self = cssString
+            .components(separatedBy: ";")
+            .compactMap(CSS.Style.init)
+    }
+    
 }

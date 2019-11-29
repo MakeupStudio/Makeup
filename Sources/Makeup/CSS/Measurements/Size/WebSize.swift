@@ -8,6 +8,19 @@
 
 public struct WebSize {
     
+    public struct Provider {
+        public var value: Double
+        public var percent: WebSize { .init(value, .percent) }
+        public var em: WebSize { .init(value, .em) }
+        public var ex: WebSize { .init(value, .ex) }
+        public var px: WebSize { .init(value, .px) }
+        public var pt: WebSize { .init(value, .pt) }
+        public var pc: WebSize { .init(value, .pc) }
+        public var inch: WebSize { .init(value, .inch) }
+        public var mm: WebSize { .init(value, .mm) }
+        public var cm: WebSize { .init(value, .cm) }
+    }
+    
     public enum Unit: String, CaseIterable {
         case percent = "%"
         case em
@@ -22,6 +35,8 @@ public struct WebSize {
     
     public var value: Double
     public var unit: Unit
+    
+    public var `as`: Provider { .init(value: value) }
     
     public init(_ value: Double, _ unit: Unit) {
         self.value = value
