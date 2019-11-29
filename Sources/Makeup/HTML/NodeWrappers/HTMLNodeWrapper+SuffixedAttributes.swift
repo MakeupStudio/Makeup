@@ -55,11 +55,32 @@ extension HTML.NodeWrapper where Element: NonMetadataHtmlTag {
         return result
     }
     
+    public func top(_ value: WebSize) -> Self {
+        updating(.styles(.top(value.rawValue)))
+    }
+    
+    public func left(_ value: WebSize) -> Self {
+        updating(.styles(.left(value.rawValue)))
+    }
+    
+    public func bottom(_ value: WebSize) -> Self {
+        updating(.styles(.bottom(value.rawValue)))
+    }
+    
+    public func right(_ value: WebSize) -> Self {
+        updating(.styles(.right(value.rawValue)))
+    }
+    
+    
     public func display(_ display: CSS.Style.Display) -> Self {
         updating(.styles(.display(display.rawValue)))
     }
     
-    public func padding(_ edges: Edge.Set = .all, _ value: WebSize = .init(16, .pt)) -> Self {
+    public func padding(_ value: WebSize = .init(16, .pt)) -> Self {
+        updating(.styles(.padding(value.rawValue)))
+    }
+    
+    public func padding(_ edges: Edge.Set, _ value: WebSize = .init(16, .pt)) -> Self {
         var result = self
         if edges.contains(.top) { result.update(.styles(.paddingTop(value.rawValue))) }
         if edges.contains(.bottom) { result.update(.styles(.paddingBottom(value.rawValue))) }
@@ -103,6 +124,18 @@ extension HTML.NodeWrapper where Element == HTML.Tag.A {
     
     public func href(_ url: String) -> Self {
         updating(.href(url))
+    }
+    
+}
+
+// MARK: - Img
+extension HTML.NodeWrapper where Element == HTML.Tag.Img {
+    
+    public func src(_ url: String) -> Self {
+        updating(.src(url))
+    }
+    public func alt(_ text: String) -> Self {
+        updating(.alt(text))
     }
     
 }
