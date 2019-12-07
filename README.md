@@ -99,7 +99,7 @@ then add `Makeup` dependency to your target.
 
 ## Still in Beta
 
-_[Not recommended to for production use yet, but you are welcome to test it out and **[here](https://mxswift.herokuapp.com)** is my example_ 😉_]_
+_[Not recommended to for production use yet, but you are welcome to test it out and **[here](https://mxswift.herokuapp.com)** is my example_ 😉 _]_
 
 __Calendar:__
 
