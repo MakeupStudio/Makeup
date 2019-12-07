@@ -26,3 +26,22 @@ final class MakeupTests: XCTestCase {
         ("testExample", testExample),
     ]
 }
+
+func test() -> Document<HTML> {
+    
+    document {
+        html {
+            head {
+                title("hello")
+            }
+            body {
+                div {
+                    h1 {
+                        "some text"
+                    }.background(color: .red)
+                }
+            }
+        }
+    }
+    
+}

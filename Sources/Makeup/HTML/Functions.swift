@@ -10,24 +10,30 @@ public func comment(_ content: String) -> AnyHtmlTagContentWrapper {
     HTML.NodeWrapper<HTML.Tag>(.comment(content))
 }
 
-public func text(_ content: () -> String) -> AnyHtmlTagContentWrapper { text(content()) }
+public func text(_ content: () -> String) -> AnyHtmlTagContentWrapper {
+    text(content())
+}
 
 public func text(_ content: String) -> AnyHtmlTagContentWrapper {
     HTML.NodeWrapper<HTML.Tag>(.text(content))
 }
 
-public func raw(_ content: () -> String) -> AnyHtmlTagContentWrapper { raw(content()) }
-
-public func raw(_ content: String) -> AnyHtmlTagContentWrapper {
-    HTML.NodeWrapper<HTML.Tag>(.text(content))
+public func raw(_ content: () -> String) -> AnyHtmlTagContentWrapper {
+    raw(content())
 }
 
-public func document(_ content: () -> HtmlDocumentContentWrapper) -> HTML.Document {
+public func raw(_ content: String) -> AnyHtmlTagContentWrapper {
+    HTML.NodeWrapper<HTML.Tag>(.raw(content))
+}
+
+public func document(_ content: () -> HtmlDocumentContentWrapper) -> Document<HTML> {
     document(content: content())
 }
 
-public func document(content wrapper: HtmlDocumentContentWrapper) -> HTML.Document {
-    HTML.Document(content: wrapper)
+public func document(content wrapper: HtmlDocumentContentWrapper) -> Document<HTML> {
+    Document<HTML>(content: [
+        .node(wrapper.content().node)
+    ])
 }
 
 // MARK: –––––––––––––––– A ––––––––––––––––

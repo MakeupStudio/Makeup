@@ -71,7 +71,6 @@ extension HTML.NodeWrapper where Element: NonMetadataHtmlTag {
         updating(.styles(.right(value.rawValue)))
     }
     
-    
     public func display(_ display: CSS.Style.Display) -> Self {
         updating(.styles(.display(display.rawValue)))
     }

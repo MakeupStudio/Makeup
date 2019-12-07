@@ -6,6 +6,24 @@
 //  Copyright © 2019 Maxim Krouk. All rights reserved.
 //
 
+/// Allows pattern matching for HtmlTags
+///
+/// ```
+/// func match<Tag: HtmlTag>(tag: Tag.Type) -> Bool {
+///     switch tag {
+///     case HTML.Tag.A.self:
+///         print("The tag was A")
+///     case HTML.Tag.B.self:
+///         print("The tag was B")
+///     default:
+///         print("Unknown tag")
+///     }
+/// }
+/// ```
+func ~=<Tag1: HtmlTag, Tag2: HtmlTag>(rhs: Tag1.Type, lhs: Tag2.Type) -> Bool {
+    return lhs.name == rhs.name
+}
+
 extension HTML {
     
     public enum Tag: HtmlTag {

@@ -11,12 +11,12 @@ extension HTML {
     public indirect enum Node: ExpressibleByStringLiteral, ExpressibleByArrayLiteral {
         case raw(String)
         case text(String)
-        case fragment([Node] = [])
+        case group([Node] = [])
         case comment(String)
         case element(HtmlTag.Type, ErasedAttributeSet, Node)
         
         public init(stringLiteral value: String) { self = .text(value) }
-        public init(arrayLiteral elements: Self...) { self = .fragment(elements) }
+        public init(arrayLiteral elements: Self...) { self = .group(elements) }
         
         public var isEmpty: Bool {
             switch self {
@@ -24,7 +24,7 @@ extension HTML {
                 return tag is NonVoidHtmlTag
             case let .comment(string), let .raw(string), let .text(string):
                 return string.isEmpty
-            case let .fragment(children):
+            case let .group(children):
                 return children.allSatisfy { $0.isEmpty }
             }
         }

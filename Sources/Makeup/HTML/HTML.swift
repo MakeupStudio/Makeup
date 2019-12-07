@@ -6,4 +6,6 @@
 //  Copyright © 2019 Maxim Krouk. All rights reserved.
 //
 
-public enum HTML {}
+public enum HTML: DocumentFormat {
+    public typealias RootContext = HtmlContext
+}

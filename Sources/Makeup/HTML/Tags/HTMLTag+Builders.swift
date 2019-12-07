@@ -14,11 +14,11 @@ public extension HTML.Tag.A {
     struct Builder {
         public static func buildBlock(_ children: HtmlATagContentWrapper...) -> HtmlATagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlATagContentWrapper?) -> HtmlATagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlATagContentWrapper) -> HtmlATagContentWrapper { first }
@@ -34,11 +34,11 @@ public extension HTML.Tag.Abbr {
     struct Builder {
         public static func buildBlock(_ children: HtmlAbbrTagContentWrapper...) -> HtmlAbbrTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlAbbrTagContentWrapper?) -> HtmlAbbrTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlAbbrTagContentWrapper) -> HtmlAbbrTagContentWrapper { first }
@@ -54,11 +54,11 @@ public extension HTML.Tag.Address {
     struct Builder {
         public static func buildBlock(_ children: HtmlAddressTagContentWrapper...) -> HtmlAddressTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlAddressTagContentWrapper?) -> HtmlAddressTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlAddressTagContentWrapper) -> HtmlAddressTagContentWrapper { first }
@@ -74,11 +74,11 @@ public extension HTML.Tag.Article {
     struct Builder {
         public static func buildBlock(_ children: HtmlArticleTagContentWrapper...) -> HtmlArticleTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlArticleTagContentWrapper?) -> HtmlArticleTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlArticleTagContentWrapper) -> HtmlArticleTagContentWrapper { first }
@@ -94,11 +94,11 @@ public extension HTML.Tag.Aside {
     struct Builder {
         public static func buildBlock(_ children: HtmlAsideTagContentWrapper...) -> HtmlAsideTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlAsideTagContentWrapper?) -> HtmlAsideTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlAsideTagContentWrapper) -> HtmlAsideTagContentWrapper { first }
@@ -114,11 +114,11 @@ public extension HTML.Tag.Audio {
     struct Builder {
         public static func buildBlock(_ children: HtmlAudioTagContentWrapper...) -> HtmlAudioTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlAudioTagContentWrapper?) -> HtmlAudioTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlAudioTagContentWrapper) -> HtmlAudioTagContentWrapper { first }
@@ -136,11 +136,11 @@ public extension HTML.Tag.B {
     struct Builder {
         public static func buildBlock(_ children: HtmlBTagContentWrapper...) -> HtmlBTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlBTagContentWrapper?) -> HtmlBTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlBTagContentWrapper) -> HtmlBTagContentWrapper { first }
@@ -156,11 +156,11 @@ public extension HTML.Tag.Bdi {
     struct Builder {
         public static func buildBlock(_ children: HtmlBdiTagContentWrapper...) -> HtmlBdiTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlBdiTagContentWrapper?) -> HtmlBdiTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlBdiTagContentWrapper) -> HtmlBdiTagContentWrapper { first }
@@ -176,11 +176,11 @@ public extension HTML.Tag.Bdo {
     struct Builder {
         public static func buildBlock(_ children: HtmlBdoTagContentWrapper...) -> HtmlBdoTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlBdoTagContentWrapper?) -> HtmlBdoTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlBdoTagContentWrapper) -> HtmlBdoTagContentWrapper { first }
@@ -196,11 +196,11 @@ public extension HTML.Tag.Blockquote {
     struct Builder {
         public static func buildBlock(_ children: HtmlBlockquoteTagContentWrapper...) -> HtmlBlockquoteTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlBlockquoteTagContentWrapper?) -> HtmlBlockquoteTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlBlockquoteTagContentWrapper) -> HtmlBlockquoteTagContentWrapper { first }
@@ -216,11 +216,11 @@ public extension HTML.Tag.Body {
     struct Builder {
         public static func buildBlock(_ children: HtmlBodyTagContentWrapper...) -> HtmlBodyTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlBodyTagContentWrapper?) -> HtmlBodyTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlBodyTagContentWrapper) -> HtmlBodyTagContentWrapper { first }
@@ -236,11 +236,11 @@ public extension HTML.Tag.Button {
     struct Builder {
         public static func buildBlock(_ children: HtmlButtonTagContentWrapper...) -> HtmlButtonTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlButtonTagContentWrapper?) -> HtmlButtonTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlButtonTagContentWrapper) -> HtmlButtonTagContentWrapper { first }
@@ -258,11 +258,11 @@ public extension HTML.Tag.Canvas {
     struct Builder {
         public static func buildBlock(_ children: HtmlCanvasTagContentWrapper...) -> HtmlCanvasTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlCanvasTagContentWrapper?) -> HtmlCanvasTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlCanvasTagContentWrapper) -> HtmlCanvasTagContentWrapper { first }
@@ -278,11 +278,11 @@ public extension HTML.Tag.Caption {
     struct Builder {
         public static func buildBlock(_ children: HtmlCaptionTagContentWrapper...) -> HtmlCaptionTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlCaptionTagContentWrapper?) -> HtmlCaptionTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlCaptionTagContentWrapper) -> HtmlCaptionTagContentWrapper { first }
@@ -298,11 +298,11 @@ public extension HTML.Tag.Cite {
     struct Builder {
         public static func buildBlock(_ children: HtmlCiteTagContentWrapper...) -> HtmlCiteTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlCiteTagContentWrapper?) -> HtmlCiteTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlCiteTagContentWrapper) -> HtmlCiteTagContentWrapper { first }
@@ -318,11 +318,11 @@ public extension HTML.Tag.Code {
     struct Builder {
         public static func buildBlock(_ children: HtmlCodeTagContentWrapper...) -> HtmlCodeTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlCodeTagContentWrapper?) -> HtmlCodeTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlCodeTagContentWrapper) -> HtmlCodeTagContentWrapper { first }
@@ -338,11 +338,11 @@ public extension HTML.Tag.Colgroup {
     struct Builder {
         public static func buildBlock(_ children: HtmlColgroupTagContentWrapper...) -> HtmlColgroupTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlColgroupTagContentWrapper?) -> HtmlColgroupTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlColgroupTagContentWrapper) -> HtmlColgroupTagContentWrapper { first }
@@ -360,11 +360,11 @@ public extension HTML.Tag.Data {
     struct Builder {
         public static func buildBlock(_ children: HtmlDataTagContentWrapper...) -> HtmlDataTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlDataTagContentWrapper?) -> HtmlDataTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlDataTagContentWrapper) -> HtmlDataTagContentWrapper { first }
@@ -380,11 +380,11 @@ public extension HTML.Tag.Datalist {
     struct Builder {
         public static func buildBlock(_ children: HtmlDatalistTagContentWrapper...) -> HtmlDatalistTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlDatalistTagContentWrapper?) -> HtmlDatalistTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlDatalistTagContentWrapper) -> HtmlDatalistTagContentWrapper { first }
@@ -400,11 +400,11 @@ public extension HTML.Tag.Dd {
     struct Builder {
         public static func buildBlock(_ children: HtmlDdTagContentWrapper...) -> HtmlDdTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlDdTagContentWrapper?) -> HtmlDdTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlDdTagContentWrapper) -> HtmlDdTagContentWrapper { first }
@@ -420,11 +420,11 @@ public extension HTML.Tag.Del {
     struct Builder {
         public static func buildBlock(_ children: HtmlDelTagContentWrapper...) -> HtmlDelTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlDelTagContentWrapper?) -> HtmlDelTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlDelTagContentWrapper) -> HtmlDelTagContentWrapper { first }
@@ -440,11 +440,11 @@ public extension HTML.Tag.Details {
     struct Builder {
         public static func buildBlock(_ children: HtmlDetailsTagContentWrapper...) -> HtmlDetailsTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlDetailsTagContentWrapper?) -> HtmlDetailsTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlDetailsTagContentWrapper) -> HtmlDetailsTagContentWrapper { first }
@@ -460,11 +460,11 @@ public extension HTML.Tag.Dfn {
     struct Builder {
         public static func buildBlock(_ children: HtmlDfnTagContentWrapper...) -> HtmlDfnTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlDfnTagContentWrapper?) -> HtmlDfnTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlDfnTagContentWrapper) -> HtmlDfnTagContentWrapper { first }
@@ -480,11 +480,11 @@ public extension HTML.Tag.Dialog {
     struct Builder {
         public static func buildBlock(_ children: HtmlDialogTagContentWrapper...) -> HtmlDialogTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlDialogTagContentWrapper?) -> HtmlDialogTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlDialogTagContentWrapper) -> HtmlDialogTagContentWrapper { first }
@@ -500,11 +500,11 @@ public extension HTML.Tag.Div {
     struct Builder {
         public static func buildBlock(_ children: HtmlDivTagContentWrapper...) -> HtmlDivTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlDivTagContentWrapper?) -> HtmlDivTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlDivTagContentWrapper) -> HtmlDivTagContentWrapper { first }
@@ -520,11 +520,11 @@ public extension HTML.Tag.Dl {
     struct Builder {
         public static func buildBlock(_ children: HtmlDlTagContentWrapper...) -> HtmlDlTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlDlTagContentWrapper?) -> HtmlDlTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlDlTagContentWrapper) -> HtmlDlTagContentWrapper { first }
@@ -540,11 +540,11 @@ public extension HTML.Tag.Dt {
     struct Builder {
         public static func buildBlock(_ children: HtmlDtTagContentWrapper...) -> HtmlDtTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlDtTagContentWrapper?) -> HtmlDtTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlDtTagContentWrapper) -> HtmlDtTagContentWrapper { first }
@@ -562,11 +562,11 @@ public extension HTML.Tag.Em {
     struct Builder {
         public static func buildBlock(_ children: HtmlEmTagContentWrapper...) -> HtmlEmTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlEmTagContentWrapper?) -> HtmlEmTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlEmTagContentWrapper) -> HtmlEmTagContentWrapper { first }
@@ -584,11 +584,11 @@ public extension HTML.Tag.Fieldset {
     struct Builder {
         public static func buildBlock(_ children: HtmlFieldsetTagContentWrapper...) -> HtmlFieldsetTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlFieldsetTagContentWrapper?) -> HtmlFieldsetTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlFieldsetTagContentWrapper) -> HtmlFieldsetTagContentWrapper { first }
@@ -604,11 +604,11 @@ public extension HTML.Tag.Figcaption {
     struct Builder {
         public static func buildBlock(_ children: HtmlFigcaptionTagContentWrapper...) -> HtmlFigcaptionTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlFigcaptionTagContentWrapper?) -> HtmlFigcaptionTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlFigcaptionTagContentWrapper) -> HtmlFigcaptionTagContentWrapper { first }
@@ -624,11 +624,11 @@ public extension HTML.Tag.Figure {
     struct Builder {
         public static func buildBlock(_ children: HtmlFigureTagContentWrapper...) -> HtmlFigureTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlFigureTagContentWrapper?) -> HtmlFigureTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlFigureTagContentWrapper) -> HtmlFigureTagContentWrapper { first }
@@ -644,11 +644,11 @@ public extension HTML.Tag.Footer {
     struct Builder {
         public static func buildBlock(_ children: HtmlFooterTagContentWrapper...) -> HtmlFooterTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlFooterTagContentWrapper?) -> HtmlFooterTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlFooterTagContentWrapper) -> HtmlFooterTagContentWrapper { first }
@@ -664,11 +664,11 @@ public extension HTML.Tag.Form {
     struct Builder {
         public static func buildBlock(_ children: HtmlFormTagContentWrapper...) -> HtmlFormTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlFormTagContentWrapper?) -> HtmlFormTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlFormTagContentWrapper) -> HtmlFormTagContentWrapper { first }
@@ -686,11 +686,11 @@ public extension HTML.Tag.H1 {
     struct Builder {
         public static func buildBlock(_ children: HtmlH1TagContentWrapper...) -> HtmlH1TagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlH1TagContentWrapper?) -> HtmlH1TagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlH1TagContentWrapper) -> HtmlH1TagContentWrapper { first }
@@ -706,11 +706,11 @@ public extension HTML.Tag.H2 {
     struct Builder {
         public static func buildBlock(_ children: HtmlH2TagContentWrapper...) -> HtmlH2TagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlH2TagContentWrapper?) -> HtmlH2TagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlH2TagContentWrapper) -> HtmlH2TagContentWrapper { first }
@@ -726,11 +726,11 @@ public extension HTML.Tag.H3 {
     struct Builder {
         public static func buildBlock(_ children: HtmlH3TagContentWrapper...) -> HtmlH3TagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlH3TagContentWrapper?) -> HtmlH3TagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlH3TagContentWrapper) -> HtmlH3TagContentWrapper { first }
@@ -746,11 +746,11 @@ public extension HTML.Tag.H4 {
     struct Builder {
         public static func buildBlock(_ children: HtmlH4TagContentWrapper...) -> HtmlH4TagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlH4TagContentWrapper?) -> HtmlH4TagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlH4TagContentWrapper) -> HtmlH4TagContentWrapper { first }
@@ -766,11 +766,11 @@ public extension HTML.Tag.H5 {
     struct Builder {
         public static func buildBlock(_ children: HtmlH5TagContentWrapper...) -> HtmlH5TagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlH5TagContentWrapper?) -> HtmlH5TagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlH5TagContentWrapper) -> HtmlH5TagContentWrapper { first }
@@ -786,11 +786,11 @@ public extension HTML.Tag.H6 {
     struct Builder {
         public static func buildBlock(_ children: HtmlH6TagContentWrapper...) -> HtmlH6TagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlH6TagContentWrapper?) -> HtmlH6TagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlH6TagContentWrapper) -> HtmlH6TagContentWrapper { first }
@@ -806,11 +806,11 @@ public extension HTML.Tag.Head {
     struct Builder {
         public static func buildBlock(_ children: HtmlHeadTagContentWrapper...) -> HtmlHeadTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlHeadTagContentWrapper?) -> HtmlHeadTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlHeadTagContentWrapper) -> HtmlHeadTagContentWrapper { first }
@@ -826,11 +826,11 @@ public extension HTML.Tag.Header {
     struct Builder {
         public static func buildBlock(_ children: HtmlHeaderTagContentWrapper...) -> HtmlHeaderTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlHeaderTagContentWrapper?) -> HtmlHeaderTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlHeaderTagContentWrapper) -> HtmlHeaderTagContentWrapper { first }
@@ -846,11 +846,11 @@ public extension HTML.Tag.Html {
     struct Builder {
         public static func buildBlock(_ children: HtmlHtmlTagContentWrapper...) -> HtmlHtmlTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlHtmlTagContentWrapper?) -> HtmlHtmlTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlHtmlTagContentWrapper) -> HtmlHtmlTagContentWrapper { first }
@@ -868,11 +868,11 @@ public extension HTML.Tag.I {
     struct Builder {
         public static func buildBlock(_ children: HtmlITagContentWrapper...) -> HtmlITagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlITagContentWrapper?) -> HtmlITagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlITagContentWrapper) -> HtmlITagContentWrapper { first }
@@ -888,11 +888,11 @@ public extension HTML.Tag.Iframe {
     struct Builder {
         public static func buildBlock(_ children: HtmlIframeTagContentWrapper...) -> HtmlIframeTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlIframeTagContentWrapper?) -> HtmlIframeTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlIframeTagContentWrapper) -> HtmlIframeTagContentWrapper { first }
@@ -908,11 +908,11 @@ public extension HTML.Tag.Ins {
     struct Builder {
         public static func buildBlock(_ children: HtmlInsTagContentWrapper...) -> HtmlInsTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlInsTagContentWrapper?) -> HtmlInsTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlInsTagContentWrapper) -> HtmlInsTagContentWrapper { first }
@@ -930,11 +930,11 @@ public extension HTML.Tag.Kbd {
     struct Builder {
         public static func buildBlock(_ children: HtmlKbdTagContentWrapper...) -> HtmlKbdTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlKbdTagContentWrapper?) -> HtmlKbdTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlKbdTagContentWrapper) -> HtmlKbdTagContentWrapper { first }
@@ -952,11 +952,11 @@ public extension HTML.Tag.Label {
     struct Builder {
         public static func buildBlock(_ children: HtmlLabelTagContentWrapper...) -> HtmlLabelTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlLabelTagContentWrapper?) -> HtmlLabelTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlLabelTagContentWrapper) -> HtmlLabelTagContentWrapper { first }
@@ -972,11 +972,11 @@ public extension HTML.Tag.Legend {
     struct Builder {
         public static func buildBlock(_ children: HtmlLegendTagContentWrapper...) -> HtmlLegendTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlLegendTagContentWrapper?) -> HtmlLegendTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlLegendTagContentWrapper) -> HtmlLegendTagContentWrapper { first }
@@ -992,11 +992,11 @@ public extension HTML.Tag.Li {
     struct Builder {
         public static func buildBlock(_ children: HtmlLiTagContentWrapper...) -> HtmlLiTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlLiTagContentWrapper?) -> HtmlLiTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlLiTagContentWrapper) -> HtmlLiTagContentWrapper { first }
@@ -1014,11 +1014,11 @@ public extension HTML.Tag.Main {
     struct Builder {
         public static func buildBlock(_ children: HtmlMainTagContentWrapper...) -> HtmlMainTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlMainTagContentWrapper?) -> HtmlMainTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlMainTagContentWrapper) -> HtmlMainTagContentWrapper { first }
@@ -1034,11 +1034,11 @@ public extension HTML.Tag.Map {
     struct Builder {
         public static func buildBlock(_ children: HtmlMapTagContentWrapper...) -> HtmlMapTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlMapTagContentWrapper?) -> HtmlMapTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlMapTagContentWrapper) -> HtmlMapTagContentWrapper { first }
@@ -1054,11 +1054,11 @@ public extension HTML.Tag.Mark {
     struct Builder {
         public static func buildBlock(_ children: HtmlMarkTagContentWrapper...) -> HtmlMarkTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlMarkTagContentWrapper?) -> HtmlMarkTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlMarkTagContentWrapper) -> HtmlMarkTagContentWrapper { first }
@@ -1074,11 +1074,11 @@ public extension HTML.Tag.Meter {
     struct Builder {
         public static func buildBlock(_ children: HtmlMeterTagContentWrapper...) -> HtmlMeterTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlMeterTagContentWrapper?) -> HtmlMeterTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlMeterTagContentWrapper) -> HtmlMeterTagContentWrapper { first }
@@ -1096,11 +1096,11 @@ public extension HTML.Tag.Nav {
     struct Builder {
         public static func buildBlock(_ children: HtmlNavTagContentWrapper...) -> HtmlNavTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlNavTagContentWrapper?) -> HtmlNavTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlNavTagContentWrapper) -> HtmlNavTagContentWrapper { first }
@@ -1116,11 +1116,11 @@ public extension HTML.Tag.Noscript {
     struct Builder {
         public static func buildBlock(_ children: HtmlNoscriptTagContentWrapper...) -> HtmlNoscriptTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlNoscriptTagContentWrapper?) -> HtmlNoscriptTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlNoscriptTagContentWrapper) -> HtmlNoscriptTagContentWrapper { first }
@@ -1138,11 +1138,11 @@ public extension HTML.Tag.Object {
     struct Builder {
         public static func buildBlock(_ children: HtmlObjectTagContentWrapper...) -> HtmlObjectTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlObjectTagContentWrapper?) -> HtmlObjectTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlObjectTagContentWrapper) -> HtmlObjectTagContentWrapper { first }
@@ -1158,11 +1158,11 @@ public extension HTML.Tag.Ol {
     struct Builder {
         public static func buildBlock(_ children: HtmlOlTagContentWrapper...) -> HtmlOlTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlOlTagContentWrapper?) -> HtmlOlTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlOlTagContentWrapper) -> HtmlOlTagContentWrapper { first }
@@ -1178,11 +1178,11 @@ public extension HTML.Tag.Optgroup {
     struct Builder {
         public static func buildBlock(_ children: HtmlOptgroupTagContentWrapper...) -> HtmlOptgroupTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlOptgroupTagContentWrapper?) -> HtmlOptgroupTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlOptgroupTagContentWrapper) -> HtmlOptgroupTagContentWrapper { first }
@@ -1198,11 +1198,11 @@ public extension HTML.Tag.Option {
     struct Builder {
         public static func buildBlock(_ children: HtmlOptionTagContentWrapper...) -> HtmlOptionTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlOptionTagContentWrapper?) -> HtmlOptionTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlOptionTagContentWrapper) -> HtmlOptionTagContentWrapper { first }
@@ -1218,11 +1218,11 @@ public extension HTML.Tag.Output {
     struct Builder {
         public static func buildBlock(_ children: HtmlOutputTagContentWrapper...) -> HtmlOutputTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlOutputTagContentWrapper?) -> HtmlOutputTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlOutputTagContentWrapper) -> HtmlOutputTagContentWrapper { first }
@@ -1240,11 +1240,11 @@ public extension HTML.Tag.P {
     struct Builder {
         public static func buildBlock(_ children: HtmlPTagContentWrapper...) -> HtmlPTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlPTagContentWrapper?) -> HtmlPTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlPTagContentWrapper) -> HtmlPTagContentWrapper { first }
@@ -1260,11 +1260,11 @@ public extension HTML.Tag.Picture {
     struct Builder {
         public static func buildBlock(_ children: HtmlPictureTagContentWrapper...) -> HtmlPictureTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlPictureTagContentWrapper?) -> HtmlPictureTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlPictureTagContentWrapper) -> HtmlPictureTagContentWrapper { first }
@@ -1280,11 +1280,11 @@ public extension HTML.Tag.Pre {
     struct Builder {
         public static func buildBlock(_ children: HtmlPreTagContentWrapper...) -> HtmlPreTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlPreTagContentWrapper?) -> HtmlPreTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlPreTagContentWrapper) -> HtmlPreTagContentWrapper { first }
@@ -1300,11 +1300,11 @@ public extension HTML.Tag.Progress {
     struct Builder {
         public static func buildBlock(_ children: HtmlProgressTagContentWrapper...) -> HtmlProgressTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlProgressTagContentWrapper?) -> HtmlProgressTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlProgressTagContentWrapper) -> HtmlProgressTagContentWrapper { first }
@@ -1322,11 +1322,11 @@ public extension HTML.Tag.Q {
     struct Builder {
         public static func buildBlock(_ children: HtmlQTagContentWrapper...) -> HtmlQTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlQTagContentWrapper?) -> HtmlQTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlQTagContentWrapper) -> HtmlQTagContentWrapper { first }
@@ -1344,11 +1344,11 @@ public extension HTML.Tag.Rp {
     struct Builder {
         public static func buildBlock(_ children: HtmlRpTagContentWrapper...) -> HtmlRpTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlRpTagContentWrapper?) -> HtmlRpTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlRpTagContentWrapper) -> HtmlRpTagContentWrapper { first }
@@ -1364,11 +1364,11 @@ public extension HTML.Tag.Rt {
     struct Builder {
         public static func buildBlock(_ children: HtmlRtTagContentWrapper...) -> HtmlRtTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlRtTagContentWrapper?) -> HtmlRtTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlRtTagContentWrapper) -> HtmlRtTagContentWrapper { first }
@@ -1384,11 +1384,11 @@ public extension HTML.Tag.Ruby {
     struct Builder {
         public static func buildBlock(_ children: HtmlRubyTagContentWrapper...) -> HtmlRubyTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlRubyTagContentWrapper?) -> HtmlRubyTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlRubyTagContentWrapper) -> HtmlRubyTagContentWrapper { first }
@@ -1406,11 +1406,11 @@ public extension HTML.Tag.S {
     struct Builder {
         public static func buildBlock(_ children: HtmlSTagContentWrapper...) -> HtmlSTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlSTagContentWrapper?) -> HtmlSTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlSTagContentWrapper) -> HtmlSTagContentWrapper { first }
@@ -1426,11 +1426,11 @@ public extension HTML.Tag.Samp {
     struct Builder {
         public static func buildBlock(_ children: HtmlSampTagContentWrapper...) -> HtmlSampTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlSampTagContentWrapper?) -> HtmlSampTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlSampTagContentWrapper) -> HtmlSampTagContentWrapper { first }
@@ -1446,11 +1446,11 @@ public extension HTML.Tag.Script {
     struct Builder {
         public static func buildBlock(_ children: HtmlScriptTagContentWrapper...) -> HtmlScriptTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlScriptTagContentWrapper?) -> HtmlScriptTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlScriptTagContentWrapper) -> HtmlScriptTagContentWrapper { first }
@@ -1466,11 +1466,11 @@ public extension HTML.Tag.Section {
     struct Builder {
         public static func buildBlock(_ children: HtmlSectionTagContentWrapper...) -> HtmlSectionTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlSectionTagContentWrapper?) -> HtmlSectionTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlSectionTagContentWrapper) -> HtmlSectionTagContentWrapper { first }
@@ -1486,11 +1486,11 @@ public extension HTML.Tag.Select {
     struct Builder {
         public static func buildBlock(_ children: HtmlSelectTagContentWrapper...) -> HtmlSelectTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlSelectTagContentWrapper?) -> HtmlSelectTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlSelectTagContentWrapper) -> HtmlSelectTagContentWrapper { first }
@@ -1506,11 +1506,11 @@ public extension HTML.Tag.Slot {
     struct Builder {
         public static func buildBlock(_ children: HtmlSlotTagContentWrapper...) -> HtmlSlotTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlSlotTagContentWrapper?) -> HtmlSlotTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlSlotTagContentWrapper) -> HtmlSlotTagContentWrapper { first }
@@ -1526,11 +1526,11 @@ public extension HTML.Tag.Small {
     struct Builder {
         public static func buildBlock(_ children: HtmlSmallTagContentWrapper...) -> HtmlSmallTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlSmallTagContentWrapper?) -> HtmlSmallTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlSmallTagContentWrapper) -> HtmlSmallTagContentWrapper { first }
@@ -1546,11 +1546,11 @@ public extension HTML.Tag.Span {
     struct Builder {
         public static func buildBlock(_ children: HtmlSpanTagContentWrapper...) -> HtmlSpanTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlSpanTagContentWrapper?) -> HtmlSpanTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlSpanTagContentWrapper) -> HtmlSpanTagContentWrapper { first }
@@ -1566,11 +1566,11 @@ public extension HTML.Tag.Strong {
     struct Builder {
         public static func buildBlock(_ children: HtmlStrongTagContentWrapper...) -> HtmlStrongTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlStrongTagContentWrapper?) -> HtmlStrongTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlStrongTagContentWrapper) -> HtmlStrongTagContentWrapper { first }
@@ -1586,11 +1586,11 @@ public extension HTML.Tag.Style {
     struct Builder {
         public static func buildBlock(_ children: HtmlStyleTagContentWrapper...) -> HtmlStyleTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlStyleTagContentWrapper?) -> HtmlStyleTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlStyleTagContentWrapper) -> HtmlStyleTagContentWrapper { first }
@@ -1606,11 +1606,11 @@ public extension HTML.Tag.Sub {
     struct Builder {
         public static func buildBlock(_ children: HtmlSubTagContentWrapper...) -> HtmlSubTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlSubTagContentWrapper?) -> HtmlSubTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlSubTagContentWrapper) -> HtmlSubTagContentWrapper { first }
@@ -1626,11 +1626,11 @@ public extension HTML.Tag.Summary {
     struct Builder {
         public static func buildBlock(_ children: HtmlSummaryTagContentWrapper...) -> HtmlSummaryTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlSummaryTagContentWrapper?) -> HtmlSummaryTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlSummaryTagContentWrapper) -> HtmlSummaryTagContentWrapper { first }
@@ -1646,11 +1646,11 @@ public extension HTML.Tag.Sup {
     struct Builder {
         public static func buildBlock(_ children: HtmlSupTagContentWrapper...) -> HtmlSupTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlSupTagContentWrapper?) -> HtmlSupTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlSupTagContentWrapper) -> HtmlSupTagContentWrapper { first }
@@ -1668,11 +1668,11 @@ public extension HTML.Tag.Table {
     struct Builder {
         public static func buildBlock(_ children: HtmlTableTagContentWrapper...) -> HtmlTableTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlTableTagContentWrapper?) -> HtmlTableTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlTableTagContentWrapper) -> HtmlTableTagContentWrapper { first }
@@ -1688,11 +1688,11 @@ public extension HTML.Tag.Tbody {
     struct Builder {
         public static func buildBlock(_ children: HtmlTbodyTagContentWrapper...) -> HtmlTbodyTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlTbodyTagContentWrapper?) -> HtmlTbodyTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlTbodyTagContentWrapper) -> HtmlTbodyTagContentWrapper { first }
@@ -1708,11 +1708,11 @@ public extension HTML.Tag.Td {
     struct Builder {
         public static func buildBlock(_ children: HtmlTdTagContentWrapper...) -> HtmlTdTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlTdTagContentWrapper?) -> HtmlTdTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlTdTagContentWrapper) -> HtmlTdTagContentWrapper { first }
@@ -1728,11 +1728,11 @@ public extension HTML.Tag.Template {
     struct Builder {
         public static func buildBlock(_ children: HtmlTemplateTagContentWrapper...) -> HtmlTemplateTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlTemplateTagContentWrapper?) -> HtmlTemplateTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlTemplateTagContentWrapper) -> HtmlTemplateTagContentWrapper { first }
@@ -1748,11 +1748,11 @@ public extension HTML.Tag.Textarea {
     struct Builder {
         public static func buildBlock(_ children: HtmlTextareaTagContentWrapper...) -> HtmlTextareaTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlTextareaTagContentWrapper?) -> HtmlTextareaTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlTextareaTagContentWrapper) -> HtmlTextareaTagContentWrapper { first }
@@ -1768,11 +1768,11 @@ public extension HTML.Tag.Tfoot {
     struct Builder {
         public static func buildBlock(_ children: HtmlTfootTagContentWrapper...) -> HtmlTfootTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlTfootTagContentWrapper?) -> HtmlTfootTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlTfootTagContentWrapper) -> HtmlTfootTagContentWrapper { first }
@@ -1788,11 +1788,11 @@ public extension HTML.Tag.Th {
     struct Builder {
         public static func buildBlock(_ children: HtmlThTagContentWrapper...) -> HtmlThTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlThTagContentWrapper?) -> HtmlThTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlThTagContentWrapper) -> HtmlThTagContentWrapper { first }
@@ -1808,11 +1808,11 @@ public extension HTML.Tag.Thead {
     struct Builder {
         public static func buildBlock(_ children: HtmlTheadTagContentWrapper...) -> HtmlTheadTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlTheadTagContentWrapper?) -> HtmlTheadTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlTheadTagContentWrapper) -> HtmlTheadTagContentWrapper { first }
@@ -1828,11 +1828,11 @@ public extension HTML.Tag.Time {
     struct Builder {
         public static func buildBlock(_ children: HtmlTimeTagContentWrapper...) -> HtmlTimeTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlTimeTagContentWrapper?) -> HtmlTimeTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlTimeTagContentWrapper) -> HtmlTimeTagContentWrapper { first }
@@ -1848,11 +1848,11 @@ public extension HTML.Tag.Title {
     struct Builder {
         public static func buildBlock(_ children: HtmlTitleTagContentWrapper...) -> HtmlTitleTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlTitleTagContentWrapper?) -> HtmlTitleTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlTitleTagContentWrapper) -> HtmlTitleTagContentWrapper { first }
@@ -1868,11 +1868,11 @@ public extension HTML.Tag.Tr {
     struct Builder {
         public static func buildBlock(_ children: HtmlTrTagContentWrapper...) -> HtmlTrTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlTrTagContentWrapper?) -> HtmlTrTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlTrTagContentWrapper) -> HtmlTrTagContentWrapper { first }
@@ -1890,11 +1890,11 @@ public extension HTML.Tag.U {
     struct Builder {
         public static func buildBlock(_ children: HtmlUTagContentWrapper...) -> HtmlUTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlUTagContentWrapper?) -> HtmlUTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlUTagContentWrapper) -> HtmlUTagContentWrapper { first }
@@ -1910,11 +1910,11 @@ public extension HTML.Tag.Ul {
     struct Builder {
         public static func buildBlock(_ children: HtmlUlTagContentWrapper...) -> HtmlUlTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlUlTagContentWrapper?) -> HtmlUlTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlUlTagContentWrapper) -> HtmlUlTagContentWrapper { first }
@@ -1932,11 +1932,11 @@ public extension HTML.Tag.Var {
     struct Builder {
         public static func buildBlock(_ children: HtmlVarTagContentWrapper...) -> HtmlVarTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlVarTagContentWrapper?) -> HtmlVarTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlVarTagContentWrapper) -> HtmlVarTagContentWrapper { first }
@@ -1952,11 +1952,11 @@ public extension HTML.Tag.Video {
     struct Builder {
         public static func buildBlock(_ children: HtmlVideoTagContentWrapper...) -> HtmlVideoTagContentWrapper {
             children.count == 1 ? children[0] :
-                HTML.NodeWrapper<HTML.Tag>(.fragment(children.map { $0.content().node }))
+                HTML.NodeWrapper<HTML.Tag>(.group(children.map { $0.content().node }))
         }
 
         public static func buildIf(_ content: HtmlVideoTagContentWrapper?) -> HtmlVideoTagContentWrapper {
-            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.fragment()))
+            content.unwrap(default: HTML.NodeWrapper<HTML.Tag>(.group()))
         }
         
         public static func buildEither(first: HtmlVideoTagContentWrapper) -> HtmlVideoTagContentWrapper { first }

@@ -1,5 +1,5 @@
 //
-//  HTMLNode+Fragment.swift
+//  HTMLNode+Group.swift
 //  Makeup
 //
 //  Created by Maxim Krouk on 9/1/19.
@@ -8,13 +8,13 @@
 
 extension HTML.Node {
     
-    var asFragment: Fragment? { Fragment(self) }
+    var asGroup: Group? { Group(self) }
     
-    struct Fragment {
+    struct Group {
         let nodes: [HTML.Node]
         
         init?(_ node: HTML.Node) {
-            guard case let HTML.Node.fragment(nodes) = node
+            guard case let HTML.Node.group(nodes) = node
             else { return nil }
             self.init(nodes: nodes)
         }
@@ -31,7 +31,7 @@ extension HTML.Node {
             .init(nodes: nodes)
         }
         
-        func wrap() -> HTML.Node { .fragment(nodes) }
+        func wrap() -> HTML.Node { .group(nodes) }
     }
     
 }
