@@ -1,6 +1,11 @@
 # Makeup 💋
 
 <p> 
+  <style>
+    * {
+     	text-decoration:none;
+    }
+  </style>
     <a href="https://www.bitrise.io">
         <img src="https://app.bitrise.io/app/61ab971f41ba1c99/status.svg?token=tpPB3UQPxF6A2wSv_EljFQ&branch=develop/release" alt="Bitrise"/>
     </a>
@@ -12,7 +17,7 @@
     </a>
     <img src="https://img.shields.io/badge/Platforms-Mac & Linux-green.svg?style=flat" alt="Mac & Linux" />
     <a href="https://twitter.com/maximkrouk">
-        <img src="https://img.shields.io/badge/twitter-@maximkrouk-blue.svg?logo=twitter&style=social" alt="Twitter: @maximkrouk" />
+        <img src="https://img.shields.io/badge/twitter-@maximkrouk-blue.svg?logo=twitter&style=social" alt="Twitter: @maximkrouk"/>
     </a>
 </p>
 
@@ -99,7 +104,7 @@ then add `Makeup` dependency to your target.
 
 ## Still in Beta
 
-> _Not recommended for production use before the first release, but you are welcome to test it out_ 😉
+_[Not recommended to for production use yet, but you are welcome to test it out and **[here](https://mxswift.herokuapp.com)** is my example_ 😉_]_
 
 __Calendar:__
 
@@ -114,11 +119,11 @@ __Calendar:__
   - December 2019 - Janruary 2020
   
 - 🗳 Xcode documentation in sources
-  - December 2019 - Janruary 2020
-  
+
+  -  November 2019 – December 2019
 - ⏱ Git-flow
-  - December 2019 - Janruary 2020
-  
+
+  - December 2019
 - ⏱ First release (API v1, static pages & simple sites production ready) _(1.0.0)_
   - Janruary 2020
   
@@ -127,16 +132,15 @@ __Calendar:__
   
 - 🗳 Attributes extended support _(via static factories)_
   - January 2020
-  
 - 🗳 API v2 _(2.0.0)_
   - February 2020
   
 - 🗳 External docs & Examples
+
   - Up to May 2020
-  
 - 🗳 Testing
+
   - Up to May 2020
-  
 - 🗳 API v3 _(3.0.0)_
   - May - June 2020
 - Other
@@ -166,6 +170,11 @@ __Calendar:__
 <div>
   <!-- --------------------- pointfree.co --------------------- -->
   <p>
+  <style>
+    * {
+     	text-decoration:none;
+    }
+  </style>
   <a href="https://github.com/pointfreeco">
   <img src="https://img.shields.io/badge/github--aaaaaa.svg?logo=github&style=social" alt = "GitHub: @pointfreeco">
   </a>
@@ -178,6 +187,11 @@ __Calendar:__
 </p>
   <!-- --------------------- David Okun --------------------- -->
   <p>
+  <style>
+    * {
+     	text-decoration:none;
+    }
+  </style>
   <a href="https://github.com/dokun1">
   <img src="https://img.shields.io/badge/github--aaaaaa.svg?logo=github&style=social" alt = "GitHub: @dokun1">
   </a>
@@ -190,6 +204,11 @@ __Calendar:__
 </p>
   <!-- -------------------- John Sundell -------------------- -->
   <p>
+  <style>
+    * {
+     	text-decoration:none;
+    }
+  </style>
   <a href="https://github.com/johnsundell">
   <img src="https://img.shields.io/badge/github--aaaaaa.svg?logo=github&style=social" alt = "GitHub: @johnsundell">
   </a>
@@ -200,6 +219,7 @@ __Calendar:__
         <img src="https://img.shields.io/badge/twitter-@johnsundell-blue.svg?logo=twitter&style=social" alt="Twitter: @johnsundell" />
     </a>
 </p></div>
+
 
 
 ---
