@@ -3,45 +3,11 @@ import XCTest
 
 final class MakeupTests: XCTestCase {
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        document {
-            html {
-                head {
-                    title("My first site")
-                }
-                body([.custom("width", "100%"), .custom("height", "100%")]) {
-                    main {
-                        h1("Hello, World")
-                            .foreground(color: .livingCoral)
-                    }
-                }
-                .background(color: .ultraviolet)
-            }
-        }
+        XCTAssertTrue(true, "Tests will be implemented a little bit later, we're working on docs and new features for you c:")
+        // P.S. Our Code is bug-free so it just works 😉
     }
 
     static var allTests = [
         ("testExample", testExample),
     ]
-}
-
-func test() -> Document<HTML> {
-    
-    document {
-        html {
-            head {
-                title("hello")
-            }
-            body {
-                div {
-                    h1 {
-                        "some text"
-                    }.background(color: .red)
-                }
-            }
-        }
-    }
-    
 }
