@@ -6,6 +6,10 @@
 //  Copyright © 2019 MakeupStudio. All rights reserved.
 //
 
+/* Generated file. */
+
+// MARK: Metadata for metadata tags
+
 extension HTML.Tag.Base: MetadataHtmlTag {}
 extension HTML.Tag.Link: MetadataHtmlTag {}
 extension HTML.Tag.Meta: MetadataHtmlTag {}

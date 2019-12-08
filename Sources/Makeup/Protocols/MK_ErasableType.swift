@@ -6,7 +6,12 @@
 //  Copyright © 2019 MakeupStudio. All rights reserved.
 //
 
+/// A protocol for type erasure pattern
+///
+/// Applicable for generics to erase their type anchors
 public protocol ErasableType {
+    
     associatedtype Erased
     var erased: Erased { get }
+    
 }

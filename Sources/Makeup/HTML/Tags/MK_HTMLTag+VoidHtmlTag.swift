@@ -6,6 +6,10 @@
 //  Copyright © 2019 MakeupStudio. All rights reserved.
 //
 
+/* Generated file. */
+
+// MARK: Metadata for void tags
+
 extension HTML.Tag.Area   : VoidHtmlTag {}
 extension HTML.Tag.Base   : VoidHtmlTag {}
 extension HTML.Tag.Br     : VoidHtmlTag {}

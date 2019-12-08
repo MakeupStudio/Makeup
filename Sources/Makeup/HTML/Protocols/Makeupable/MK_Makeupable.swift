@@ -8,6 +8,9 @@
 
 public protocol Makeupable {
     
+    /// Warning: Erases the istance to AnyHtmlTagContentWrapper
+    ///
+    /// A little cheat for avoiding semantic checks if needed, use carefully.
     func makeup() -> AnyHtmlTagContentWrapper
     
 }

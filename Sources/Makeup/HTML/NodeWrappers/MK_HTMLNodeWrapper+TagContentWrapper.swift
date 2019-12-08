@@ -6,6 +6,15 @@
 //  Copyright © 2019 MakeupStudio. All rights reserved.
 //
 
+/* Generated file. */
+
+// MARK: Defines a NodeWrappers where Element : ContentOfHtml<Tagname>
+// MARK:                                 as a : Html<Tagname>ContentWrapper
+//
+// [Wrapper<Content<Type>> => TypeContentWrapper]
+//
+// We hope U see the logic 😅
+
 extension HTML.NodeWrapper: HtmlDocumentContentWrapper where Element: ContentOfHtmlDocument {
     public func content() -> HTML.NodeWrapper<ContentOfHtmlDocument> { .init(node) }
 }

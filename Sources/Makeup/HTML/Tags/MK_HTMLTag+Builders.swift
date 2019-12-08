@@ -6,6 +6,10 @@
 //  Copyright © 2019 MakeupStudio. All rights reserved.
 //
 
+/* Generated file. */
+
+// MARK: Function builders for tags
+
 // MARK: - –––––––––––––––– A ––––––––––––––––
 
 public extension HTML.Tag.A {

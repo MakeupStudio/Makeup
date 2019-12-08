@@ -6,6 +6,18 @@
 //  Copyright © 2019 MakeupStudio. All rights reserved.
 //
 
+// MARK: HTML Semantics support, use this file to edit the semantics
+// MARK: with ContentOf<Tagname>HtmlTag protocols.
+
+// Example for contributors:
+//
+// extension HTML.Tag.Th: ContentOfTableHtmlTag {}
+// // instead of
+// // extension HTML.Tag.Th: ContentOfAnyHtmlTag {}
+//
+// Learn more at https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories
+// 😉
+
 extension HTML.Tag: ContentOfAnyHtmlTag {}
 
 // MARK: - –––––––––––––––– A ––––––––––––––––

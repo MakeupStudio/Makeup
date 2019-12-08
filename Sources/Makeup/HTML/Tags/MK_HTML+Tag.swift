@@ -6,7 +6,9 @@
 //  Copyright © 2019 MakeupStudio. All rights reserved.
 //
 
-/// Allows pattern matching for HtmlTags
+// MARK: List of supported tags [HTML5 only]
+
+/// Allows pattern matching for html tags
 ///
 /// ```
 /// func match<Tag: HtmlTag>(tag: Tag.Type) -> Bool {
@@ -23,6 +25,8 @@
 func ~=<Tag1: HtmlTag, Tag2: HtmlTag>(rhs: Tag1.Type, lhs: Tag2.Type) -> Bool {
     return lhs.name == rhs.name
 }
+
+/* Generated file. */
 
 extension HTML {
     

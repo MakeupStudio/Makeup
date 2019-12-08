@@ -8,6 +8,7 @@
 
 public protocol HtmlPage {
     
+    /// Content of the page
     var content: HtmlDocumentContentWrapper { get }
 
 }

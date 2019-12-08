@@ -14,6 +14,7 @@ public protocol StaticallyNamedType {
 
 extension StaticallyNamedType {
     
+    /// The name of the type
     public static var name: String { "\(Self.self)" }
     
 }

@@ -6,6 +6,10 @@
 //  Copyright © 2019 MakeupStudio. All rights reserved.
 //
 
+/* Generated file. */
+
+// MARK: Metadata for visible tags
+
 extension HTML.Tag.A          : VisibleHtmlTag {}
 extension HTML.Tag.Abbr       : VisibleHtmlTag {}
 extension HTML.Tag.Address    : VisibleHtmlTag {}
