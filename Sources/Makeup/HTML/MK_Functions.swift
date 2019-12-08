@@ -1037,7 +1037,7 @@ public func link(_ attributes: HTML.Attribute<HTML.Tag.Link>...) -> HTML.NodeWra
 }
 
 public func link(_ attributes: HTML.AttributeSet<HTML.Tag.Link>) -> HTML.NodeWrapper<HTML.Tag.Link> {
-    .init(.element(HTML.Tag.Img.self, attributes.erased, []))
+    .init(.element(HTML.Tag.Link.self, attributes.erased, []))
 }
 
 // MARK: –––––––––––––––– M ––––––––––––––––
