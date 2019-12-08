@@ -6,6 +6,18 @@
 //  Copyright © 2019 MakeupStudio. All rights reserved.
 //
 
+extension Document {
+    
+    public struct Content {
+        public var body: Renderable
+        
+        internal init(_ body: Renderable) {
+            self.body = body
+        }
+    }
+    
+}
+
 public struct Document<Format: DocumentFormat> {
     
     public var content = [Content]()
@@ -14,7 +26,7 @@ public struct Document<Format: DocumentFormat> {
 
 extension Document: Renderable {
     
-    public func render(indentedBy indentation: Indentation? = .init()) -> String {
+    public func render(indentedBy indentation: Indentation = .default) -> String {
         content
             .map { $0.body.render(indentedBy: indentation) }
             .joined(separator: indentation.suffix)

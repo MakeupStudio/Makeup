@@ -21,9 +21,9 @@ public extension WebFont {
     static func custom(_ first: Name, _ others: Name...,
                        ofSize size: WebSize? = .none,
                        weight: Weight? = .none) -> Self {
-        var name = first.value
+        var name = first.stringValue
         if !others.isEmpty {
-            name.append(others.reduce("") { "\($0), \($1.value)"})
+            name.append(others.reduce("") { "\($0), \($1.stringValue)"})
         }
         return .init(name: .custom(name), size: size, weight: weight)
     }

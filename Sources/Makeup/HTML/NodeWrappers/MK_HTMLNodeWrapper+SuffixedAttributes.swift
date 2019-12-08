@@ -6,6 +6,10 @@
 //  Copyright © 2019 MakeupStudio. All rights reserved.
 //
 
+// MARK: SwiftUI-like API of applying attributes as chainable methods.
+// Not exactly SwiftUIs API and a little bit another approach, but we'll make
+// WebUI later 😇
+
 // MARK: - Private
 extension HTML.NodeWrapper where Element: HtmlTag {
     
@@ -25,15 +29,15 @@ extension HTML.NodeWrapper where Element: HtmlTag {
 extension HTML.NodeWrapper where Element: NonMetadataHtmlTag {
     
     public func foreground(color: WebColor) -> Self {
-        updating(.styles(.color(color.value)))
+        updating(.styles(.color(color.stringValue)))
     }
     
     public func background(color: WebColor) -> Self {
-        updating(.styles(.backgroundColor(color.value)))
+        updating(.styles(.backgroundColor(color.stringValue)))
     }
     
     public func fontWeight(_ weight: WebFont.Weight) -> Self {
-        updating(.styles(.fontWeight(weight.value)))
+        updating(.styles(.fontWeight(weight.stringValue)))
     }
     
     public func fontSize(_ size: WebSize) -> Self {

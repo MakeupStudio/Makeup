@@ -17,8 +17,6 @@ public struct WebColor {
     public var blue: Double = 0
     public var alpha: Double = 1
     
-    public var value: String { "rgba(\(red * 255),\(green * 255),\(blue * 255),\(alpha * 255))" }
-    
 }
 
 // MARK: - Instance methods
@@ -82,5 +80,11 @@ public extension WebColor {
     static func hex(rgba value: UInt32) -> WebColor! { WebColor(rgba: value) }
     
     static func white(_ value: Double) -> WebColor { WebColor(red: value, green: value, blue: value) }
+    
+}
+
+extension WebColor: StringValueConvertable {
+    
+    public var stringValue: String { "rgba(\(red * 255),\(green * 255),\(blue * 255),\(alpha * 255))" }
     
 }

@@ -6,7 +6,7 @@
 //  Copyright © 2019 MakeupStudio. All rights reserved.
 //
 
-public protocol HtmlAttribute {
+public protocol HtmlAttribute: StringValueConvertable {
     
     var key: String { get }
     var value: String { get }
@@ -30,6 +30,7 @@ extension HtmlAttribute {
     }
     
     public var rawValue: String { "\(key)=\"\(value)\"" }
+    public var stringValue: String { rawValue }
     
     public func isEqual(to other: Self) -> Bool {
         rawValue == other.rawValue

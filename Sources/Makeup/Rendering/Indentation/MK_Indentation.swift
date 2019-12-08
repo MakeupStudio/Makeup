@@ -6,23 +6,12 @@
 //  Copyright © 2019 MakeupStudio. All rights reserved.
 //
 
-extension Optional where Wrapped == Indentation {
-    
-    public var prefix: String { self?.string ?? "" }
-    public var suffix: String { self.isNil ? "" : "\n" }
-    
-    public func indent(_ string: String) -> String {
-        prefix + string + suffix
-    }
-    
-    public static func spaces(_ count: Int = 4) -> Self! { .init(.spaces(count)) }
-    public static func tabs(_ count: Int = 1) -> Self! { .init(.tabs(count)) }
-    public static var minimization: Self { return nil }
-}
-
 public struct Indentation: ExpressibleByStringLiteral, ExpressibleByIntegerLiteral {
     
+    /// Describes the pattern of the indentation
     public var kind: Kind
+    
+    /// Describes the current level of the indentation
     public var level: Int
     
     public func indented() -> Self {
@@ -42,14 +31,39 @@ public struct Indentation: ExpressibleByStringLiteral, ExpressibleByIntegerLiter
         self.init(Kind(stringLiteral: value))
     }
     
-    public static func spaces(_ count: Int = 4) -> Self { .init(.spaces(count)) }
-    public static func tabs(_ count: Int = 1) -> Self { .init(.tabs(count)) }
-    public static var minimization: Self? { return nil }
+    /// Indents the  string by adding prefix and posfix
+    ///
+    /// Prefix is specified by the indentation level and kind pattern
+    /// Suffix is empty if the indentation kind is minimization and "\n" otherwise
+    public func indent(_ string: String) -> String {
+        prefix + string + suffix
+    }
+    
+    /// Spaces indentation [recommended]
+    public static func spaces(_ count: Int = 4) -> Self { .init(Kind.spaces(count)) }
+    
+    /// Tabs indentation
+    public static func tabs(_ count: Int = 1) -> Self { .init(Kind.tabs(count)) }
+    
+    /// No prefix, no suffix
+    public static var minimization: Self { .init(Kind.minimization) }
+    
+    /// Alias for .spaces(4)
+    public static var `default`: Self { .init(Kind.default) }
+    
 }
 
-extension Indentation: CustomStringConvertible {
+extension Indentation: StringValueConvertable {
     
-    public var string: String { String(repeating: kind.rawValue, count: level) }
-    public var description: String { kind.description }
+    internal var prefix: String { String(repeating: kind.pattern ?? "", count: level) }
+    internal var suffix: String { kind == .minimization ? "" : "\n" }
+    
+    /// Prefix for indentation
+    public var stringValue: String { prefix }
+    
+    public var description: String {
+        guard kind != .minimization else { return kind.description }
+        return kind.description + " Indentation level: \(level)."
+    }
     
 }

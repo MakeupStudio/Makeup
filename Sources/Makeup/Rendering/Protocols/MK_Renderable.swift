@@ -7,12 +7,13 @@
 //
 
 public protocol Renderable {
-    func render(indentedBy indentation: Indentation?) -> String
+    func render(indentedBy indentation: Indentation) -> String
 }
 
 extension String: Renderable {
     
-    public func render(indentedBy indentation: Indentation?) -> String {
+    /// Renders a string with specified indentation.
+    public func render(indentedBy indentation: Indentation) -> String {
         indentation.indent(self)
     }
     
@@ -20,7 +21,8 @@ extension String: Renderable {
 
 extension Array: Renderable where Element: Renderable {
     
-    public func render(indentedBy indentation: Indentation?) -> String {
+    /// Reduces all child nodes renders into one string
+    public func render(indentedBy indentation: Indentation) -> String {
         reduce(into: "") { string, node in
             string.append(node.render(indentedBy: indentation))
         }

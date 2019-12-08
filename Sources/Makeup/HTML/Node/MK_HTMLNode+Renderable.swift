@@ -10,13 +10,13 @@
 
 extension HTML.Node: Renderable {
     
-    public func render(indentedBy indentation: Indentation?) -> String {
+    public func render(indentedBy indentation: Indentation) -> String {
         var output = String()
         render(into: &output, indentedBy: indentation)
         return output
     }
     
-    public func render(into output: inout String, indentedBy indentation: Indentation?) {
+    public func render(into output: inout String, indentedBy indentation: Indentation) {
         render(self, into: &output, indentedBy: indentation)
     }
     
@@ -26,7 +26,7 @@ extension HTML.Node: Renderable {
 
 extension HTML.Node {
     
-    func render(_ node: HTML.Node, into output: inout String, indentedBy indentation: Indentation?) {
+    func render(_ node: HTML.Node, into output: inout String, indentedBy indentation: Indentation) {
         switch node {
         case let .raw(string):
             output.append(string.wrap.raw.by(indentation))
@@ -44,7 +44,7 @@ extension HTML.Node {
                 output.append((tagName + render(attributes)).wrap.voidTag.by(indentation))
             } else {
                 output.append((tagName + render(attributes)).wrap.nonVoidTag.by(indentation))
-                if !node.isEmpty { render(node, into: &output, indentedBy: indentation?.indented()) }
+                if !node.isEmpty { render(node, into: &output, indentedBy: indentation.indented()) }
                 output.append(tagName.wrap.closingTag.by(indentation))
             }
             
@@ -53,7 +53,7 @@ extension HTML.Node {
         }
     }
     
-    func render(_ nodes: [HTML.Node], into output: inout String, indentedBy indentation: Indentation?) {
+    func render(_ nodes: [HTML.Node], into output: inout String, indentedBy indentation: Indentation) {
         nodes.forEach { render($0, into: &output, indentedBy: indentation) }
     }
     
@@ -81,7 +81,7 @@ fileprivate extension String {
     
     struct _IndentationWrap {
         var rawValue: String
-        func by(_ indentation: Indentation?) -> String {
+        func by(_ indentation: Indentation) -> String {
             rawValue.render(indentedBy: indentation)
         }
     }
@@ -110,7 +110,7 @@ fileprivate extension String {
         
         var closingTag: _IndentationWrap { .init(rawValue: "</\(rawValue)>") }
         
-        func by(_ indentation: Indentation?) -> String {
+        func by(_ indentation: Indentation) -> String {
             rawValue.render(indentedBy: indentation)
         }
     }
