@@ -1,5 +1,7 @@
 # Makeup 💋
 
+> _(See `develop/release` brunch for the most relevant codebase.)_
+
 <p>
     <a href="https://www.bitrise.io">
         <img src="https://app.bitrise.io/app/61ab971f41ba1c99/status.svg?token=tpPB3UQPxF6A2wSv_EljFQ&branch=develop/release" alt="Bitrise"/>
@@ -99,7 +101,7 @@ then add `Makeup` dependency to your target.
 
 ## Still in Beta
 
-_[Not recommended to for production use yet, but you are welcome to test it out and **[here](https://mxswift.herokuapp.com)** is my example_ 😉 _]_
+> _Not recommended for production use before the first release, but you are welcome to test it out_ 😉
 
 __Calendar:__
 
@@ -112,30 +114,31 @@ __Calendar:__
 - ✅ Rendering
 - ⏱ NodeWrapper attibutes modification via suffixed methods _(dot-notation like in the __Usage__ example)_
   - December 2019 - Janruary 2020
-  
+
 - 🗳 Xcode documentation in sources
+  - December 2019 - Janruary 2020
 
-  -  November 2019 – December 2019
 - ⏱ Git-flow
+  - December 2019 - Janruary 2020
 
-  - December 2019
 - ⏱ First release (API v1, static pages & simple sites production ready) _(1.0.0)_
   - Janruary 2020
-  
+
 - 🗳 Contribution guide with explanations of the package architecture
   - December 2019 – Janruary 2020
-  
+
 - 🗳 Attributes extended support _(via static factories)_
   - January 2020
+
 - 🗳 API v2 _(2.0.0)_
   - February 2020
-  
+
 - 🗳 External docs & Examples
-
   - Up to May 2020
+
 - 🗳 Testing
-
   - Up to May 2020
+
 - 🗳 API v3 _(3.0.0)_
   - May - June 2020
 - Other
@@ -157,6 +160,7 @@ __Calendar:__
 
 🗳 - Waiting
 
+## Sites using Makeup
 
 **[mxswift](https://mxswift.herokuapp.com)**
 
@@ -200,11 +204,7 @@ __Calendar:__
     </a>
 </p></div>
 
+----
 
-
----
-
-_You may contact me [here](https://twitter.com/maximkrouk) if You want to contribute before the guide is provided or if You have any other questions or ideas._
-
----
+> _You may contact me [here](https://twitter.com/maximkrouk) if You want to contribute before the guide is provided or if You have any other questions or ideas._
 
