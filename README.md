@@ -101,7 +101,7 @@ then add `Makeup` dependency to your target.
 
 ## Still in Beta
 
-> _Not recommended to for production use yet, but you are welcome to test it out and **[here](https://mxswift.herokuapp.com)** is my example_ 😉
+> _Not recommended for production use before the first release, but you are welcome to test it out_ 😉
 
 __Calendar:__
 
@@ -160,7 +160,9 @@ __Calendar:__
 
 🗳 - Waiting
 
+## Sites using Makeup
 
+**[mxswift](https://mxswift.herokuapp.com)**
 
 ## Thanks for inspiration and ideas
 
@@ -201,8 +203,6 @@ __Calendar:__
         <img src="https://img.shields.io/badge/twitter-@johnsundell-blue.svg?logo=twitter&style=social" alt="Twitter: @johnsundell" />
     </a>
 </p></div>
-
-
 
 ----
 
