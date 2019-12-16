@@ -1,6 +1,6 @@
 # Makeup 💋
 
-> _(See `develop/release` brunch for the most relevant codebase.)_
+> State: Decomposing Makeup into smaller packages. Major improvements are comming, so now we're working locally to get a better makeup up and running.
 
 <p>
     <a href="https://www.bitrise.io">
