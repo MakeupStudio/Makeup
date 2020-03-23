@@ -1,6 +1,6 @@
 # Makeup 💋
 
-> _(See `develop/release` brunch for the more relevant codebase.)_
+> _(See `develop/release` branch for the more relevant codebase.)_
 
 > _(Deadlines are missed, but still working on improvements & CSS DSL)_
 
