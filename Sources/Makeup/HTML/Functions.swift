@@ -949,7 +949,7 @@ public func input(_ attributes: HTML.Attribute<HTML.Tag.Input>...) -> HTML.NodeW
 }
 
 public func input(_ attributes: HTML.AttributeSet<HTML.Tag.Input>) -> HTML.NodeWrapper<HTML.Tag.Input> {
-    .init(.element(HTML.Tag.Img.self, attributes.erased, []))
+    .init(.element(HTML.Tag.Input.self, attributes.erased, []))
 }
 
 public func ins(_ attributes: HTML.Attribute<HTML.Tag.Ins>...,
