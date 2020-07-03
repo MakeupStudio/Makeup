@@ -1,7 +1,5 @@
 # Makeup 💋
 
-> State: Decomposing Makeup into smaller packages. Major improvements are comming, so now we're working locally to get a better makeup up and running.
-
 <p>
     <a href="https://www.bitrise.io">
         <img src="https://app.bitrise.io/app/61ab971f41ba1c99/status.svg?token=tpPB3UQPxF6A2wSv_EljFQ&branch=develop/release" alt="Bitrise"/>
@@ -18,7 +16,7 @@
     </a>
 </p>
 
-Swift DSL for rendering HTML. Not the first, but the best (will become, one day... 😌)
+Swift DSL for rendering WebPages. Not the first, but the best (will become, one day... 😌)
 
 ## Usage
 
@@ -94,75 +92,22 @@ and looks like:
 Add the package to Your SwiftPM package dependencies:
 
 ```swift
-.package(url: "https://github.com/MakeupStudio/Makeup.git", from: "0.2.1")
+.package(url: "https://github.com/MakeupStudio/Makeup.git", .branch("master"))
 ```
 
 then add `Makeup` dependency to your target.
+
+```swift
+.product(name: "Makeup", package: "Makeup")
+```
 
 ## Still in Beta
 
 > _Not recommended for production use before the first release, but you are welcome to test it out_ 😉
 
-__Calendar:__
-
-- ✅ Basics (Nodes, Attributes, some CSS)
-- ✅ Assets (WebColor, WebSize, Webfonts)
-- ✅ Preparations for semantic filtering
-- ✅ Function Builders
-- ✅ Html building functions
-- ✅ String literal support
-- ✅ Rendering
-- ⏱ NodeWrapper attibutes modification via suffixed methods _(dot-notation like in the __Usage__ example)_
-  - December 2019 - Janruary 2020
-
-- 🗳 Xcode documentation in sources
-  - December 2019 - Janruary 2020
-
-- ⏱ Git-flow
-  - December 2019 - Janruary 2020
-
-- ⏱ First release (API v1, static pages & simple sites production ready) _(1.0.0)_
-  - Janruary 2020
-
-- 🗳 Contribution guide with explanations of the package architecture
-  - December 2019 – Janruary 2020
-
-- 🗳 Attributes extended support _(via static factories)_
-  - January 2020
-
-- 🗳 API v2 _(2.0.0)_
-  - February 2020
-
-- 🗳 External docs & Examples
-  - Up to May 2020
-
-- 🗳 Testing
-  - Up to May 2020
-
-- 🗳 API v3 _(3.0.0)_
-  - May - June 2020
-- Other
-  - 🗳 SVG support
-  - 🗳 Drawing engine, based on SVG
-  - 🗳 XML support
-  - 🗳 MD support
-  - 🗳 Syntax highlighting
-  - 🗳 Swift grammar for syntax highlighting
-  - 🗳 JS support
-  - 🗳 CSS extended support
-  - ⏱ Extracting colors into another library _(GenericColors)_
-
----
-
-✅ - Done
-
-⏱ - In progress
-
-🗳 - Waiting
-
 ## Sites using Makeup
 
-**[mxswift](https://mxswift.herokuapp.com)**
+**[makeupstudio.dev](https://mxswift.herokuapp.com)**
 
 ## Thanks for inspiration and ideas
 
@@ -203,8 +148,6 @@ __Calendar:__
         <img src="https://img.shields.io/badge/twitter-@johnsundell-blue.svg?logo=twitter&style=social" alt="Twitter: @johnsundell" />
     </a>
 </p></div>
-
 ----
 
 > _You may contact me [here](https://twitter.com/maximkrouk) if You want to contribute before the guide is provided or if You have any other questions or ideas._
-
